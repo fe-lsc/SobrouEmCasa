@@ -1,72 +1,82 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Sobrou Em Casa</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <p><strong>Sobrou Em Casa</strong></p>
-        <p>Felipe Lima de Souza Carvalho</p>
-        <p>Pedro Paulo Menezes Sasso</p>
-        <p>João Victor Timo Angelotti Pinto</p>
-        <p>Rodrigo Abdalla Ramos da Silva</p>
-        <p>Mateus Silva do Prado</p>
+    <div id="container">
+      <ion-content :fullscreen="true">      
+      <div>
+        <ion-img id="logo" :src="Logo"></ion-img>
       </div>
-    </ion-content>
+    
+    <div>
+      <div class="login">
+        <h5>Usuário (Email):</h5>
+        <ion-item>
+         <ion-input></ion-input>
+        </ion-item>
+      </div>
+    </div>
+    
+    <div>
+      <div class="login">
+        <h5>Senha:</h5>
+        <ion-item>
+         <ion-input></ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+     </ion-content>
+    </div>    
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonPage, IonImg, IonInput, IonItem } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'HomePage',
   components: {
     IonContent,
-    IonHeader,
     IonPage,
-    IonTitle,
-    IonToolbar
+    IonImg,
+    IonInput,
+    IonItem
+  }, setup() {
+    return {
+      Logo : "../../assets/images/Logo.png",
+    }
   }
 });
 </script>
 
-<style scoped>
+<style>
+ion-input{
+  --background: var(--ion-item-background);
+  --color: var(--ion-background-color);
+}
+
+ion-item{
+  --border-radius: 5px;
+  --height: 10px;
+}
+
 #container {
-  text-align: center;
-  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  --background: var(--ion-background-color);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#logo{
+  margin-top: 150px;
+  height: 40px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  
-  color: #8c8c8c;
-  
-  margin: 0;
+.login{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  border-radius: 5px;
+  align-items: center;
+  flex-flow: column;
 }
+ 
 
-#container a {
-  text-decoration: none;
-}
 </style>
