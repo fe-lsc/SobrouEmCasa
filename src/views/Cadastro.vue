@@ -5,26 +5,8 @@
       <div>
         <ion-img id="logo" :src="Logo"></ion-img>
       </div>
-    
-    <div>
-      <div class="login">
-        <h5>Usuário (Email):</h5>
-        <ion-item>
-         <ion-input></ion-input>
-        </ion-item>
-      </div>
-    </div>
-    
-    <div>
-      <div class="login">
-        <h5>Senha:</h5>
-        <ion-item>
-         <ion-input></ion-input>
-        </ion-item>
-      </div>
-    </div>
-
-     </ion-content>
+      
+      </ion-content>
     </div>    
   </ion-page>
 </template>
@@ -34,7 +16,7 @@ import { IonContent, IonPage, IonImg, IonInput, IonItem } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'Cadastro',
   components: {
     IonContent,
     IonPage,
@@ -50,12 +32,12 @@ export default defineComponent({
 </script>
 
 <style>
-ion-input{
+ion-input {
   --background: var(--ion-item-background);
   --color: var(--ion-background-color);
 }
 
-ion-item{
+ion-item {
   --border-radius: 5px;
   --height: 10px;
 }
@@ -64,19 +46,9 @@ ion-item{
   --background: var(--ion-background-color);
 }
 
-#logo{
-  margin-top: 150px;
+#logo {
+  margin-top: 120px;
   height: 40px;
 }
-
-.login{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  border-radius: 5px;
-  align-items: center;
-  flex-flow: column;
-}
- 
 
 </style>
