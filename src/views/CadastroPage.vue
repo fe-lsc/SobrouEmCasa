@@ -11,7 +11,7 @@
           Pessoa Jurídica
           <img src="/../../assets/images/Predio.png">
         </ion-button>
-        <ion-button id="pf">
+        <ion-button id="pf"  @click="this.$router.push('/CadastroPF')">
           Pessoa Física
           <img src="/../../assets/images/user-alt.png">
         </ion-button>

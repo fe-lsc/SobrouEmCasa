@@ -1,7 +1,7 @@
 <template>
     <ion-page>
         <toolbar-layout>
-            DOADOR
+            JURIDICO
         </toolbar-layout>
     </ion-page>
 </template>

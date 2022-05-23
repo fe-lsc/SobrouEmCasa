@@ -6,6 +6,8 @@ import SobreNos from '../views/SobreNos.vue'
 import SuasDoacoes from '../views/SuasDoacoes.vue'
 import HomePageDoador from '../views/HomePageDoador.vue'
 import CadastroFisico from '../views/CadastroFisico.vue'
+import CadastroJuridico from '../views/CadastroJuridico.vue'
+import HomePageJuridico from '../views/HomePageJuridico.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -41,6 +43,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/CadastroPf',
     name: 'CadastroPf',
     component: CadastroFisico
+  },
+  {
+    path: '/CadastroPj',
+    name: 'CadastroPj',
+    component: CadastroJuridico
+  },
+  {
+    path: '/HomePageJuridico',
+    name: 'HomePageJuridico',
+    component: HomePageJuridico
   }
 ]
 
