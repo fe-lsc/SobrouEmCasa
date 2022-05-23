@@ -2,7 +2,9 @@
     <ion-page>
         <ion-header>
             <ion-toolbar color="tertiary">
-                
+                <ion-buttons @click="goBack()" slot="start">
+                <ion-img id="ArrowBack" slot="start" src="../../assets/icon/ArrowBack.png"></ion-img>
+                </ion-buttons>
 
                 <ion-buttons @click="openMenu()" slot="end">
                     <ion-icon :icon="menu" slot="end"></ion-icon>
@@ -48,6 +50,10 @@ export default{
     methods:{
         openMenu(){
             menuController.open("app-menu")
+        },
+        goBack(){
+            const router = this.$router
+            router.go(-1);  
         }
     }
 }

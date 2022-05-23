@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import LoginPage from '../views/LoginPage.vue'
 import CadastroPage from '../views/CadastroPage.vue'
-import HomePageDoador from '../views/HomePageDoador.vue'
 import SobreNos from '../views/SobreNos.vue'
 import SuasDoacoes from '../views/SuasDoacoes.vue'
 
@@ -24,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/HomePageDoador',
     name: 'HomePageDoador',
-    component: HomePageDoador
+    component: () => import('@/views/HomePageDoador.vue')
   },
   {
     path: '/SuasDoacoes',

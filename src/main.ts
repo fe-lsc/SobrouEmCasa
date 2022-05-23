@@ -23,12 +23,14 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import ToolBarLayout from '@/components/ToolBar.vue'
+import ToolBarLayoutWithArrow from '@/components/ToolBarWithArrow.vue'
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
   
   app.component('toolbar-layout',ToolBarLayout) 
+  app.component('toolbar-layout-arrow',ToolBarLayoutWithArrow) 
   
 router.isReady().then(() => {
   app.mount('#app');
