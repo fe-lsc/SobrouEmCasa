@@ -4,6 +4,8 @@ import LoginPage from '../views/LoginPage.vue'
 import CadastroPage from '../views/CadastroPage.vue'
 import SobreNos from '../views/SobreNos.vue'
 import SuasDoacoes from '../views/SuasDoacoes.vue'
+import HomePageDoador from '../views/HomePageDoador.vue'
+import CadastroFisico from '../views/CadastroFisico.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/HomePageDoador',
     name: 'HomePageDoador',
-    component: () => import('@/views/HomePageDoador.vue')
+    component: HomePageDoador
   },
   {
     path: '/SuasDoacoes',
@@ -34,6 +36,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/SobreNos',
     name: 'SobreNos',
     component: SobreNos
+  },
+  {
+    path: '/CadastroPf',
+    name: 'CadastroPf',
+    component: CadastroFisico
   }
 ]
 
