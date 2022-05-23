@@ -1,6 +1,6 @@
 <template>
-  <ion-page>
-    <div id="container">
+  <ion-page >
+    <div id="container" >
       <ion-content :fullscreen="true">      
       <div>
         <ion-img id="logo" :src="Logo"></ion-img>
@@ -21,7 +21,7 @@
           <ion-item>
           <ion-input></ion-input>
           </ion-item>
-        </div>
+        </div> 
       </div>
 
       <h3>Entrar</h3>

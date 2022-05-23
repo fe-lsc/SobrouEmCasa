@@ -1,8 +1,12 @@
 <template>
     <ion-page>
         <toolbar-layout>
-            DOADOR
-        </toolbar-layout>
+            <ion-content :fullscreen="true" color="tertiary">
+            <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
+            <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.png"></ion-img>
+        
+            </ion-content>
+            </toolbar-layout>
     </ion-page>
 </template>
 
@@ -23,3 +27,14 @@ export default defineComponent({
   }
 });
 </script>
+
+
+<style>
+
+#NovaDoacao{ 
+  height: 400px;
+}
+#EditarInformacoes{ 
+  height: 40px;
+}
+</style>

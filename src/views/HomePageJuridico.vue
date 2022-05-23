@@ -1,7 +1,8 @@
 <template>
     <ion-page>
         <toolbar-layout>
-            JURIDICO
+           <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
+            <ion-img id="ProcurarDoacao" src="../../assets/images/ProcurarDoacao.png"></ion-img>
         </toolbar-layout>
     </ion-page>
 </template>
@@ -23,3 +24,15 @@ export default defineComponent({
   }
 });
 </script>
+
+
+
+<style>
+
+#ProcurarDoacao{ 
+  height: 450px;
+}
+#EditarInformacoes{ 
+  height: 40px;
+}
+</style>
