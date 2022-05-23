@@ -26,7 +26,7 @@
 
       <h3>Entrar</h3>
 
-      <p id="clique-cadastro">Não tem cadastro? <a href="#">Cadastre-se aqui!</a></p>
+      <p id="clique-cadastro">Não tem cadastro? <a href="cadastro">Cadastre-se aqui!</a></p>
 
       </ion-content>
     </div>    
@@ -38,7 +38,7 @@ import { IonContent, IonPage, IonImg, IonInput, IonItem } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'LoginPage',
   components: {
     IonContent,
     IonPage,
@@ -60,7 +60,7 @@ ion-input{
 }
 
 ion-item{
-  --border-radius: 5px;
+  --border-radius: 20px;
   --height: 10px;
 }
 
