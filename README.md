@@ -1,5 +1,5 @@
-# SobrouEmCasa :iphone: :house_with_garden:
-## Descrição:
+## SobrouEmCasa :iphone: :house_with_garden:
+### Descrição:
 ### Um aplicativo mobile com intuito de tornar as doações mais fáceis e acessíveis  para todos.
 
 ## Desenvolvido pelos alunos:
@@ -8,3 +8,9 @@
 ### Pedro Paulo Menezes Sasso         190217
 ### Felipe Lima de Souza Carvalho     190190
 ### Mateus da Silva do Prado          190477
+
+
+## Backend ⚙️
+
+### Monatagem da API sendo realizada em repositorio externo
+https://github.com/M4teusPrado/SobrouEmCasa.API.git
