@@ -14,7 +14,7 @@
             <div class="login">
                 <p>E-Mail:</p>
                 <ion-item> <ion-input></ion-input> </ion-item>
-            </div>
+            </div> 
             <div class="login">
                 <p>CPF Responsável:</p>
                 <ion-item> <ion-input></ion-input> </ion-item>

@@ -15,6 +15,7 @@
 
 ### Montagem da API sendo realizada em repositorio externo
 https://github.com/M4teusPrado/SobrouEmCasa.API.git
+#### O passo a passo e manual dessa API se encontram no repositório da mesma.
 
 ## Passo a Passo instalação
 #### 1 - Instale o NodeJs
