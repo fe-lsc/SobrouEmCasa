@@ -1,12 +1,12 @@
 <template>
     <ion-page>
+      <ion-content :fullscreen="true" color="tertiary">
         <toolbar-layout>
-            <ion-content :fullscreen="true" color="tertiary">
             <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
-            <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.png"></ion-img>
-        
-            </ion-content>
+            <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.png"></ion-img>  
             </toolbar-layout>
+      </ion-content>
+        
     </ion-page>
 </template>
 

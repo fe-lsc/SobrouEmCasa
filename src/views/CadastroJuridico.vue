@@ -1,6 +1,7 @@
 <template>
     <ion-page>
-        <toolbar-layout-logo>
+         <ion-content :fullscreen="true" color="tertiary">
+            <toolbar-layout-logo>
             
             <div class="login">
                 <p>Nome Responsável:</p>
@@ -66,11 +67,13 @@
                 <p>Número:</p>
                 <ion-item> <ion-input></ion-input> </ion-item>
             </div>
-
+            
             <ion-buttons id="Criar" @click="this.$router.push('/HomePageJuridico')">
                 Criar
             </ion-buttons>
         </toolbar-layout-logo>
+         </ion-content>
+        
         
       
     </ion-page>

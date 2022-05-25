@@ -1,6 +1,7 @@
 <template>
     <ion-page>
-        <toolbar-layout-logo>
+        <ion-content :fullscreen="true" color="tertiary">
+             <toolbar-layout-logo>
             
             <div class="login">
                 <p>Nome Completo:</p>
@@ -51,10 +52,13 @@
                 <ion-item> <ion-input></ion-input> </ion-item>
             </div>
 
-            <ion-buttons id="Criar" @click="this.$router.push('/HomePageDoador')">
-                Criar
-            </ion-buttons>
+           
+            <ion-button id="Criar" @click="this.$router.push('/HomePageDoador')">
+            Criar
+            </ion-button>
         </toolbar-layout-logo>
+        </ion-content>
+       
         
       
     </ion-page>
@@ -65,14 +69,14 @@
 import { defineComponent } from 'vue';
 import{
         IonPage,
-        IonButtons
+        IonButton
     } from '@ionic/vue';
 
 export default defineComponent({
   name: 'HomePage',
   components: {
       IonPage,
-      IonButtons
+      IonButton
   }, setup() {
     return {
     }
@@ -84,9 +88,16 @@ export default defineComponent({
 
 <style>
 
+ion-button {
+    --margin-right:auto;
+    --margin-left:auto;
+}
+
 #Criar{ 
-  margin-left: 300px;
+  margin-left: auto;
+  margin-right: auto;
   height: 40px;
+  display: flex;
 }
 </style>
 

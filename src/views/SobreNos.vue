@@ -1,6 +1,7 @@
 <template>
 <ion-page>
-    <toolbar-layout-arrow>
+    <ion-content :fullscreen="true" color="tertianary">
+    <toolbar-layout-arrow> 
         <ion-text id="SobreNos" color="dark">
             <h1>Sobre nós</h1>
             <h3>A SobrouEmCasa surgiu durante a faculdade, 
@@ -18,13 +19,18 @@
             e nos incentivaria ainda mais!
             </h3>
         </ion-text>
+        <div id="pix">
+            <ion-img  id="logoPix" src="/../../assets/images/PixLogo.png"></ion-img>
+            <ion-text> CPF: 422.175.778-75</ion-text>
+        </div> 
 
-        <ion-img  id="logoPix" src="/../../assets/images/PixLogo.png"></ion-img>
-        <ion-text > 422.175.778-75</ion-text>
+        
             
                
         
     </toolbar-layout-arrow>
+    </ion-content>
+    
 </ion-page>
     
 </template>
@@ -52,11 +58,14 @@ export default defineComponent({
   height: 25px;
   margin-left: 5px;
 }
+#pix{ 
+  display:inline;
+}
 #SobreNos {
   text-align: center;
 }
 #logoPix {
   margin-left: -220px;
-   height: 20px;
+   height: 50px;
 }
 </style>
