@@ -1,5 +1,5 @@
-## SobrouEmCasa :iphone: :house_with_garden:
-### Descrição:
+# SobrouEmCasa :iphone: :house_with_garden:
+## Descrição:
 ### Aplicativo mobile com intuito de tornar as doações mais fáceis e acessíveis  para todos.
 #### Visamos ajudar ONG’s e instituições de caridade por meio de doações. O objetivo principal é facilitar aos doadores a realizar doações de qualquer categoria de produto, seja itens de higiene, roupas e acessórios, brinquedos e alimentos. Sendo assim, as ONG'S poderão ver todas as doações em aberto (podem até filtrar na categoria que mais está precisando) e então ver o contato do doador, para agendar a retirada.
 
