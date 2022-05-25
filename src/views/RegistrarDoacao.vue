@@ -1,12 +1,10 @@
 <template>
     <ion-page>
-        <toolbar-layout>
-
-        </toolbar-layout>
-
-        <ion-content :fullscreen="true">
-            TESTE
-        </ion-content>
+      <ion-content :fullscreen="true">
+        <toolbar-layout-arrow>
+            teste
+        </toolbar-layout-arrow>
+      </ion-content>
     </ion-page>
 </template>
 
