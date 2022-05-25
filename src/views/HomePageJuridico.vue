@@ -1,9 +1,11 @@
 <template>
     <ion-page>
+      <ion-content>
         <toolbar-layout>
-           <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
+            <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
             <ion-img id="ProcurarDoacao" src="../../assets/images/ProcurarDoacao.png"></ion-img>
         </toolbar-layout>
+      </ion-content>
     </ion-page>
 </template>
 
@@ -11,13 +13,13 @@
 
 import { defineComponent } from 'vue';
 import{
-        IonPage
+        IonPage, IonContent
     } from '@ionic/vue';
 
 export default defineComponent({
   name: 'HomePage',
   components: {
-      IonPage
+      IonPage, IonContent
   }, setup() {
     return {
     }

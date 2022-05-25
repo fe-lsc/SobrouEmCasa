@@ -69,7 +69,7 @@ ion-item{
 }
 
 #logo{
-  margin-top: 120px;
+  margin-top: 320px;
   height: 40px;
 }
 

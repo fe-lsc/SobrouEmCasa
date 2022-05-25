@@ -8,6 +8,7 @@ import HomePageDoador from '../views/HomePageDoador.vue'
 import CadastroFisico from '../views/CadastroFisico.vue'
 import CadastroJuridico from '../views/CadastroJuridico.vue'
 import HomePageJuridico from '../views/HomePageJuridico.vue'
+import RegistrarDoacao from '../views/RegistrarDoacao.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -53,6 +54,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/HomePageJuridico',
     name: 'HomePageJuridico',
     component: HomePageJuridico
+  },
+  {
+    path: '/RegistrarDoacao',
+    name: 'RegistrarDoacao',
+    component: RegistrarDoacao
   }
 ]
 

@@ -7,7 +7,7 @@
       </div>
       
       <div id="buttons">
-        <ion-button id="pj">
+        <ion-button id="pj" @click="this.$router.push('/CadastroPJ')">
           Pessoa Jurídica
           <img src="/../../assets/images/Predio.png">
         </ion-button>
