@@ -36,11 +36,21 @@ https://github.com/M4teusPrado/SobrouEmCasa.API.git
 ######    5.2 - Digite o comando "Ionic serve"
 ######    5.3 - Irá abrir o app.
 
-## TELAS JÁ FEITAS 
-### 1 - Login
+## TELAS EM ANDAMENTO (Todas ainda passarão por um refinamento de design e funcionalidades)
+### 1 - Login 
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/Login.png)
 
+### 2 - Tela Cadastro
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastro.png)
 
+### 3 - Cdastro Pessoa Física
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastroPf_JUNTAS.png)
 
+### 4 - Cdastro Pessoa Juridica 
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastroPj_JUNTAS.png)
 
+### 5 - Home Page Doador (Em fase inicial)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastroPj_JUNTAS.png)
 
+### 6 - Home Page Juridico (Em fase inicial)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastroPj_JUNTAS.png)
