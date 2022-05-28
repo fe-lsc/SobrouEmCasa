@@ -22,12 +22,30 @@
                 <ion-select-option class="select-option" value="outros">Outros</ion-select-option>
               </ion-select>
             </ion-item>
+
+            <h1>Cadastro do Produto</h1>
+
+            <div>
+              <div id="nomeProduto">
+                <ion-item class="ion-margin">
+                <ion-input placeholder="Nome do Produto"></ion-input>
+                </ion-item>
+              </div>
+            </div>
+
+            <div>
+              <div id="descricaoProduto">
+                <ion-item class="ion-margin">
+                <ion-input placeholder="Descrição do produto (tente colocar no máximo 200 caracteres)"></ion-input>
+                </ion-item>
+              </div>
+            </div>
         </ion-content>
     </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonPage, IonItem, IonLabel, IonSelect, IonSelectOption } from '@ionic/vue';
+import { IonContent, IonPage, IonItem, IonLabel, IonSelect, IonSelectOption, IonInput } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -38,7 +56,8 @@ export default defineComponent({
     IonItem, 
     IonLabel, 
     IonSelect, 
-    IonSelectOption
+    IonSelectOption,
+    IonInput
   }, setup() {
     const options: any = {
       cssClass: 'my-custom-interface'
@@ -62,4 +81,19 @@ export default defineComponent({
   background-color: #82D2FF;
   margin-top: 50px;
 }
+
+h1{ 
+  display: flex;
+  justify-content: center;
+  font-family: 'Pacifico-Medium';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+#descricaoProduto {
+  height: 80px;
+}
+
 </style>
