@@ -1,10 +1,8 @@
 <template>
     <ion-page>
-        <toolbar-layout-arrow>
-
-        </toolbar-layout-arrow>
         <ion-content :fullscreen="true">
-            <ion-item class="ion-margin">
+            <toolbar-layout-arrow>
+              <ion-item class="ion-margin">
               <ion-label class="select-categ">Selecione a categoria</ion-label>
               <ion-select interface="action-sheet" :interface-options="options">
                 <ion-select-option class="select-option" value="eletrodomesticos">Eletrodomésticos</ion-select-option>
@@ -40,6 +38,7 @@
                 </ion-item>
               </div>
             </div>
+          </toolbar-layout-arrow>
         </ion-content>
     </ion-page>
 </template>

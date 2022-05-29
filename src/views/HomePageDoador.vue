@@ -1,6 +1,6 @@
 <template>
     <ion-page>
-      <ion-content :fullscreen="true" color="tertiary">
+      <ion-content :fullscreen="true" >
         <toolbar-layout>
             <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
             <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.png" @click="this.$router.push('/RegistrarDoacao')"></ion-img>  

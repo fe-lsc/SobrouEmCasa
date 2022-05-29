@@ -1,0 +1,22 @@
+ion-toolbar {
+    height: 51px;
+    --background: var(--ion-color-tertiary);
+}
+
+
+#logoToolbar{ 
+    margin-top: 1px;
+    height: 40px;
+    color: white;
+}
+  
+#ArrowBackToolbar{ 
+    height: 25px;
+    margin-left: 5px;
+    color: white;
+}
+#menuToolbar{ 
+    height: 25px;
+    margin-left: 5px;
+    color: white;
+}

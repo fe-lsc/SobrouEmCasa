@@ -22,6 +22,7 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/core.css';
 import ToolBarLayout from '@/components/ToolBar.vue'
 import ToolBarLayoutWithArrow from '@/components/ToolBarWithArrow.vue'
 import ToolBarLayoutOnlyLogo from '@/components/ToolBarOnlyLogo.vue'

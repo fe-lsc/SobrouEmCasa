@@ -1,16 +1,16 @@
 <template>
     <ion-page>
         <ion-header>
-            <ion-toolbar color="tertiary">
-                <ion-buttons @click="goBack()" slot="start">
-                <ion-img id="ArrowBack" slot="start" src="../../assets/icon/ArrowBack.png"></ion-img>
+            <ion-toolbar >
+                <ion-buttons @click="goBack()" slot="end">
+                <ion-img id="ArrowBackToolbar" slot="end" src="../../assets/icon/ArrowBack.png"></ion-img>
                 </ion-buttons>
 
-                <ion-buttons @click="openMenu()" slot="end">
-                    <ion-icon :icon="menu" slot="end"></ion-icon>
+                <ion-buttons @click="openMenu()" slot="start">
+                    <ion-icon :icon="menu" id="menuToolbar" slot="start"></ion-icon>
                 </ion-buttons>
 
-                <ion-img id="logo" src="../../assets/images/Logo.png"></ion-img>
+                <ion-img id="logoToolbar" src="../../assets/images/Logo.png"></ion-img>
 
             </ion-toolbar>
         </ion-header>
@@ -62,16 +62,5 @@ export default{
 
 <style>
 
-#logo{ 
-  margin-top: -4px;
-  height: 40px;
-}
-ion-toolbar {
-    height: 51px;
-    
-  }
-#ArrowBack{ 
-  height: 25px;
-  margin-left: 5px;
-}
+
 </style>
