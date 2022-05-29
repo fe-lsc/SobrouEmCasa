@@ -4,6 +4,7 @@
             <ion-toolbar >
                 <ion-buttons @click="goBack()" slot="end">
                 <ion-img id="ArrowBackToolbar" slot="end" src="../../assets/icon/ArrowBack.png"></ion-img>
+                ion-back
                 </ion-buttons>
 
                 <ion-buttons @click="openMenu()" slot="start">

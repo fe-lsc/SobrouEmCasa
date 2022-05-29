@@ -1,6 +1,6 @@
 ion-toolbar {
     height: 51px;
-    --background: var(--ion-color-tertiary);
+    --background: var(--ion-toolbar-color);
 }
 
 
@@ -12,7 +12,7 @@ ion-toolbar {
   
 #ArrowBackToolbar{ 
     height: 25px;
-    margin-left: 5px;
+    margin-right: -50px;
     color: white;
 }
 #menuToolbar{ 

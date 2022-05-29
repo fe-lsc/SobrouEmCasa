@@ -6,7 +6,6 @@
             <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.png" @click="this.$router.push('/RegistrarDoacao')"></ion-img>  
             </toolbar-layout>
       </ion-content>
-        
     </ion-page>
 </template>
 

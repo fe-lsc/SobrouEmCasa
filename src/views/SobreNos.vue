@@ -25,9 +25,6 @@
         </div> 
 
         
-            
-               
-        
     </toolbar-layout-arrow>
     </ion-content>
     
