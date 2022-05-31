@@ -2,6 +2,7 @@
   <ion-page>
     <ion-content>
       <toolbar-layout-arrow>
+        <h1 >Suas doações</h1>
         <ion-list>
             <ion-item  button
               v-for="doacao in doacoes"
@@ -12,8 +13,18 @@
                 <ion-img :src="doacao.source" :alt="doacao.title"></ion-img>
               </ion-thumbnail>
               <ion-label > 
-                {{doacao.title}}
-              </ion-label>
+              <ion-list>
+                <ion-item>
+                  {{doacao.title}}
+                </ion-item>
+                <ion-item>
+                  {{doacao.categoria}}
+                </ion-item>
+                <ion-item >
+                  Status: {{doacao.status}}
+                </ion-item>
+              </ion-list>                
+              </ion-label >
             </ion-item>
         </ion-list> 
       </toolbar-layout-arrow>
