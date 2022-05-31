@@ -38,6 +38,14 @@
                 </ion-item>
               </div>
             </div>
+
+            <div>
+              <div id="endereço">
+                <ion-item class="ion-margin">
+                <ion-input placeholder="Endereço"></ion-input>
+                </ion-item>
+              </div>
+            </div>
           </toolbar-layout-arrow>
         </ion-content>
     </ion-page>
@@ -89,6 +97,8 @@ h1{
   font-weight: 400;
   font-size: 10px;
   line-height: 18px;
+  padding: 8px;
+  border-bottom: 5px solid #B6D9E1;
 }
 
 #descricaoProduto {
