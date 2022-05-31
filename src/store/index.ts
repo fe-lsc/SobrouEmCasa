@@ -6,7 +6,7 @@ import { createStore, Store } from 'vuex'
 // define your typings for the store state
 export interface State {
   doacoes: { 
-    id: number; 
+    id: string; 
     title: string; 
     description: string; 
     dataDoacao: string;
@@ -23,7 +23,7 @@ export const store = createStore<State>({
   state: {
     doacoes: [
       {
-        id: 1, 
+        id: "1", 
         title: 'Pasta de dente, 5 unidades', 
         description: '5 unidades de pasta de dente fechadas.',
         dataDoacao: '',
@@ -33,7 +33,7 @@ export const store = createStore<State>({
         source: 'https://img.olx.com.br/images/16/167246760824578.jpg'
       },
       {
-        id: 2,  
+        id: "2",  
         title: 'Pop It!', 
         description: 'Brinquedo Pop It, ótimo para crianças. Brinquedo em perfeitas condições',
         dataDoacao: '13/01/2022',
@@ -43,7 +43,7 @@ export const store = createStore<State>({
         source: 'https://frankfurt.apollo.olxcdn.com/v1/files/py8lqbzx8ku41-RO/image;s=644x461'
       },
       {
-        id: 3, 
+        id: "3", 
         title: 'Livro: Tudo o que nunca contei - Usado', 
         description: 'Livro usado e muito bem conservado. Ótima leitura!',
         dataDoacao: '',
@@ -53,7 +53,7 @@ export const store = createStore<State>({
         source: 'https://img.olx.com.br/images/68/681215383550502.jpg'
       },
       {
-        id: 4, 
+        id: "4", 
         title: 'Jaqueta Usada', 
         description: 'Jaqueta usada porém em ótimo estado',
         dataDoacao: '',
@@ -79,5 +79,10 @@ export const store = createStore<State>({
     doacoes(state) {
       return state.doacoes;
     },
+    doacao(state) {
+      return (IdDoacao: string)=>{
+        return state.doacoes.find((doacao) => doacao.id === IdDoacao)
+      };
+    }
   },
 })
