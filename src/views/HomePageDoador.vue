@@ -1,7 +1,7 @@
 <template>
     <ion-page>
       <ion-content :fullscreen="true" >
-        <toolbar-layout>
+        <toolbar-layout>  
             <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
             <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.png" @click="this.$router.push('/RegistrarDoacao')"></ion-img>  
             </toolbar-layout>
@@ -17,7 +17,7 @@ import{
     } from '@ionic/vue';
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'HomePageDoador',
   components: {
       IonPage
   }, setup() {

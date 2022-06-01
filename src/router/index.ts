@@ -9,6 +9,7 @@ import CadastroFisico from '../views/CadastroFisico.vue'
 import CadastroJuridico from '../views/CadastroJuridico.vue'
 import HomePageJuridico from '../views/HomePageJuridico.vue'
 import RegistrarDoacao from '../views/RegistrarDoacao.vue'
+import EditarPerfil from '../views/EditarPerfil.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -64,6 +65,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/RegistrarDoacao',
     name: 'RegistrarDoacao',
     component: RegistrarDoacao
+  },
+  {
+    path: '/EditarPerfil',
+    name: 'EditarPerfil',
+    component: EditarPerfil
   }
 ]
 

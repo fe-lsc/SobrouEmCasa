@@ -17,7 +17,7 @@ import{
     } from '@ionic/vue';
 
 export default defineComponent({
-  name: 'HomePage',
+  name: 'HomePageJuridico',
   components: {
       IonPage, IonContent
   }, setup() {
