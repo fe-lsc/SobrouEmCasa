@@ -10,6 +10,7 @@ import CadastroJuridico from '../views/CadastroJuridico.vue'
 import HomePageJuridico from '../views/HomePageJuridico.vue'
 import RegistrarDoacao from '../views/RegistrarDoacao.vue'
 import EditarPerfil from '../views/EditarPerfil.vue'
+import AlterarSenha from '../views/AlterarSenha.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -70,6 +71,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/EditarPerfil',
     name: 'EditarPerfil',
     component: EditarPerfil
+  },
+  {
+    path: '/AlterarSenha',
+    name: 'AlterarSenha',
+    component: AlterarSenha
   }
 ]
 
