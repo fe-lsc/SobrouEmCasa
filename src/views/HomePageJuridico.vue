@@ -3,7 +3,7 @@
       <ion-content :fullscreen="true" color="tertiary">
         <toolbar-layout>
             <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png"></ion-img>
-            <ion-img id="ProcurarDoacao" src="../../assets/images/ProcurarDoacao.png"></ion-img>
+            <ion-img id="ProcurarDoacao" src="../../assets/images/ProcurarDoacao.png"  @click="this.$router.push('/ProcurarDoacao')"></ion-img>
         </toolbar-layout>
       </ion-content>
     </ion-page>

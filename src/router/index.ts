@@ -11,7 +11,7 @@ import HomePageJuridico from '../views/HomePageJuridico.vue'
 import RegistrarDoacao from '../views/RegistrarDoacao.vue'
 import EditarPerfil from '../views/EditarPerfil.vue'
 import AlterarSenha from '../views/AlterarSenha.vue'
-
+import ProcurarDoacao from '../views/ProcurarDoacao.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -39,8 +39,8 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/SuasDoacoes/:id',
-    name: 'DetalheSuasDoacoes',
-    component: () => import('../views/DetalheSuasDoacoes.vue')
+    name: 'EditarDoacoes',
+    component: () => import('../views/EditarDoacoes.vue')
   },
   {
     path: '/SobreNos',
@@ -76,6 +76,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/AlterarSenha',
     name: 'AlterarSenha',
     component: AlterarSenha
+  },
+  {
+    path: '/ProcurarDoacao',
+    name: 'ProcurarDoacao',
+    component: ProcurarDoacao
   }
 ]
 

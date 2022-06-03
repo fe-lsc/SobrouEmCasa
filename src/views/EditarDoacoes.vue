@@ -2,11 +2,15 @@
   <ion-page>
     <ion-content>
       <toolbar-layout-arrow>
+        <h1 id="TitleEditarDoacao">Editar doação</h1>
+
+
+        <h2>{{doacao.categoria}}</h2>
         <ion-img id="ImagemDoacaoDetalhe" :src="doacao.source" :alt="doacao.title"></ion-img>
         <h2>{{doacao.title}}</h2>
         <h2>{{doacao.description}}</h2>
         <h2>{{doacao.status}}</h2>
-        <h2>{{doacao.categoria}}</h2>
+        
       </toolbar-layout-arrow>
     </ion-content>
   </ion-page>
@@ -64,4 +68,9 @@ export default defineComponent({
 #ImagemDoacaoDetalhe{ 
     height: 300px;
 }
+#TitleEditarDoacao{ 
+   /* Mudar fonte pra pacifico (Não entendi como mudar)*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 </style>

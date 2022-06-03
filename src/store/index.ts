@@ -34,7 +34,7 @@ export const store = createStore<State>({
       },
       {
         id: "2",  
-        title: 'Pop It!', 
+        title: 'Brinquedo Pop It!', 
         description: 'Brinquedo Pop It, ótimo para crianças. Brinquedo em perfeitas condições',
         dataDoacao: '13/01/2022',
         status: 'Doado',
