@@ -2,6 +2,7 @@
     <ion-page>
         <ion-content :fullscreen="true">
             <toolbar-layout-arrow>
+              
               <ion-item class="ion-margin">
               <ion-label class="select-categ">{{NomeFiltroCategoria}}</ion-label>
               <ion-select interface="action-sheet" :interface-options="options">
@@ -50,7 +51,7 @@
                         </ion-card-content>
                         <ion-card-header>
                             <ion-card-subtitle>Livros e Revistas</ion-card-subtitle>
-                            <ion-card-title>Livro: Tudo o que nunca contei - Usado</ion-card-title>
+                            <ion-card-title class="TituloAnunciosCards">Livro: Tudo o que nunca contei - Usado</ion-card-title>
                         </ion-card-header>
                     </ion-card>
                 </ion-col>
@@ -61,7 +62,7 @@
                         </ion-card-content>
                         <ion-card-header>
                             <ion-card-subtitle>Higiene Pessoal</ion-card-subtitle>
-                            <ion-card-title>Pasta de dente, 5 unidades</ion-card-title>
+                            <ion-card-title class="TituloAnunciosCards">Pasta de dente, 5 unidades</ion-card-title>
                         </ion-card-header>
                     </ion-card>
                 </ion-col>
@@ -74,7 +75,7 @@
                         </ion-card-content>
                         <ion-card-header>
                             <ion-card-subtitle>Brinquedos e Jogos</ion-card-subtitle>
-                            <ion-card-title>Brinquedo Pop It</ion-card-title>
+                            <ion-card-title class="TituloAnunciosCards">Brinquedo Pop It</ion-card-title>
                         </ion-card-header>
                 </ion-card>
             </ion-col>
@@ -85,16 +86,19 @@
                         </ion-card-content>
                         <ion-card-header>
                             <ion-card-subtitle>Roupas e acessórios</ion-card-subtitle>
-                            <ion-card-title>Jaqueta Usada</ion-card-title>
+                            <ion-card-title class="TituloAnunciosCards">Jaqueta Usada</ion-card-title>
                         </ion-card-header>
                 </ion-card>
             </ion-col>
           </ion-row>
             </ion-grid>
-
+          
           </toolbar-layout-arrow>
+          
         </ion-content>
+        <project-footer></project-footer>
     </ion-page>
+    
 </template>
 
 <script lang="ts">
@@ -117,6 +121,9 @@ export default defineComponent({
   }, 
   data(){
     return{
+      LinkInsta: "www.instagram.com",
+      LinkTwitter: "www.twitter.com",
+      LinkFacebook: "www.facebook.com",
       NomeFiltroCategoria: "Filtrar por categoria",
       NomeFiltroDistancia: "Filtrar por Distância"
     }
@@ -132,6 +139,11 @@ export default defineComponent({
     methods:{
         ChangeNomeFiltroCategoria(nome){
             this.NomeFiltroCategoria = nome
+        },
+        openSite(link: string){
+          /* NAO TA FUNFANDO, TA ABRINDO DENTRO DO LOCAL HOST, TENTEI HREF MAS AINDA SIM NAO FOI */
+          window.open(link, '_system')
+          
         }
     }
   , setup() {
@@ -143,24 +155,3 @@ export default defineComponent({
   }
 });
 </script>
-
-<style>
-
-.ImagemCardsAnuncios {
-  height: 150px;
-  width: 150px;
-  margin: 0%;
-}
-
-
-#descricaoProduto {
-  height: 200px;
-}
-
-
-.cardsAnuncios {
-  background: rgba(226, 226, 226, 0.678);
-}
-
-
-</style>

@@ -60,7 +60,7 @@
         </ion-content>
        
         
-      
+      <project-footer></project-footer>
     </ion-page>
 </template>
 

@@ -20,3 +20,41 @@ ion-toolbar {
     margin-left: 5px;
     color: white;
 }
+
+.ImagemCardsAnuncios {
+    height: 150px;
+    width: 150px;
+    margin: 0%;
+  }
+  
+  ion-footer{
+    width: 100%;
+    background: rgba(9, 185, 255, 0.678);
+  }
+  
+  
+  .TituloAnunciosCards {
+    width: 100%;
+  }
+  
+  #descricaoProduto {
+    height: 200px;
+  }
+  
+  /*
+  #logoTwitterFooter {
+  }*/
+
+  #logoFacebookFooter {
+    margin-right: 15px;
+  }
+ 
+  #logoInstaFooter {
+    margin-left: 40%;
+  }
+  
+  .cardsAnuncios {
+    background: rgba(226, 226, 226, 0.678);
+    width: 130px;
+  }
+  

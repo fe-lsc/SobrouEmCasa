@@ -12,7 +12,7 @@
               <ion-thumbnail slot="start">
                 <ion-img :src="doacao.source" :alt="doacao.title"></ion-img>
               </ion-thumbnail>
-              <ion-label > 
+              <ion-label> 
               <ion-list>
                 <ion-item>
                   {{doacao.title}}
@@ -20,7 +20,7 @@
                 <ion-item>
                   {{doacao.categoria}}
                 </ion-item>
-                <ion-item >
+                <ion-item>
                   Status: {{doacao.status}}
                 </ion-item>
               </ion-list>                
@@ -29,6 +29,7 @@
         </ion-list> 
       </toolbar-layout-arrow>
     </ion-content>
+    <project-footer></project-footer>
   </ion-page>
 </template>
 

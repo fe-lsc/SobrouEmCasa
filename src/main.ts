@@ -29,6 +29,7 @@ import './theme/core.css';
 import ToolBarLayout from '@/components/ToolBar.vue'
 import ToolBarLayoutWithArrow from '@/components/ToolBarWithArrow.vue'
 import ToolBarLayoutOnlyLogo from '@/components/ToolBarOnlyLogo.vue'
+import ProjectFooter from '@/components/ProjectFooter.vue'
 
 const app = createApp(App)
   .use(IonicVue)
@@ -38,7 +39,8 @@ const app = createApp(App)
   app.component('toolbar-layout',ToolBarLayout) 
   app.component('toolbar-layout-arrow',ToolBarLayoutWithArrow) 
   app.component('toolbar-layout-logo',ToolBarLayoutOnlyLogo) 
-
+  app.component('project-footer',ProjectFooter) 
+  
 router.isReady().then(() => {
   app.mount('#app');
 });
