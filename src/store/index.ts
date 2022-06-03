@@ -3,7 +3,7 @@ import { InjectionKey } from 'vue'
 import { createStore, Store } from 'vuex'
 
 
-// define your typings for the store state
+// Definição das variaveis que serão usadas no projeto, é necessário colocar todas para usar a store.
 export interface State {
   doacoes: { 
     id: string; 
@@ -20,6 +20,7 @@ export interface State {
 export const key: InjectionKey<Store<State>> = Symbol()
 
 export const store = createStore<State>({
+  // A state armazena as variáveis. Aqui é preciso ter todas.
   state: {
     doacoes: [
       {
@@ -65,20 +66,20 @@ export const store = createStore<State>({
     ]
   }
   ,
-  mutations: {     
-    setDoacoes: (state, value) => {
-      state.doacoes = value;
-    },
+  // A mutations são funções que mudam o valor de alguma variável da state
+  mutations: { 
   },
+
   actions: {
-    setDoacoes: (context, values) => {
-      context.commit('setDoacoes', values);
-    }
   },
+
+  // As getters são funções que retornam os dados armazenados na state
   getters: {
+    // Função que retorna todas as doações
     doacoes(state) {
       return state.doacoes;
     },
+    // Funçãom que retorna apenas uma doação, passando o ID da mesma
     doacao(state) {
       return (IdDoacao: string)=>{
         return state.doacoes.find((doacao) => doacao.id === IdDoacao)

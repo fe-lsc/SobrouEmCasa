@@ -5,7 +5,6 @@
       <div>
         <ion-img id="logo" :src="Logo"></ion-img>
       </div>
-      
       <div id="buttons">
         <ion-button id="pj" @click="this.$router.push('/CadastroPJ')">
           Pessoa Jurídica
@@ -16,10 +15,8 @@
           <img src="/../../assets/images/user-alt.png">
         </ion-button>
       </div>
-
       </ion-content>
     </div>    
-    
   </ion-page>
 </template>
 

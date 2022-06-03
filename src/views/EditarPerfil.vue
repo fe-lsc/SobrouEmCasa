@@ -7,7 +7,6 @@
               <h2>Foto de Perfil</h2>
               <ion-img id="EditarInformacoes" src="../../assets/icon/Perfil.svg"></ion-img>
               <ion-button color="secondary" class="ion-margin">Selecionar outra foto de perfil</ion-button>
-              
               <div>
                 <h2>Nome Exibido</h2>
                 <div id="nomePerfil">
@@ -16,7 +15,6 @@
                   </ion-item>
                 </div>
               </div>
-
               <div>
                 <h2>Descrição</h2>
                 <div id="descricaoPerfil">
@@ -25,7 +23,6 @@
                   </ion-item>
                 </div>
               </div>
-
               <div>
                 <h2>Endereço</h2>
                 <div id="endereçoPerfil">
@@ -34,7 +31,6 @@
                   </ion-item>
                 </div>
               </div>
-
               <h2>Conta</h2>
               <ion-button class="ion-margin" color="danger">Alterar Senha</ion-button>
               <ion-button class="ion-margin" color="danger">Apagar Conta</ion-button>

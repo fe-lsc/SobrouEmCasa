@@ -40,6 +40,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/SuasDoacoes/:id',
     name: 'EditarDoacoes',
+    // Carregamento tardio (Menos lentidao)
     component: () => import('../views/EditarDoacoes.vue')
   },
   {

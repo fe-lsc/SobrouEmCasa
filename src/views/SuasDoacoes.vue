@@ -4,15 +4,16 @@
       <toolbar-layout-arrow>
         <h1 >Suas doações</h1>
         <ion-list>
-            <ion-item  button
-              v-for="doacao in doacoes"
-              @click="menuNavigation(`/SuasDoacoes/${doacao.id}`)"
-              :key="doacao.id"
-            >
-              <ion-thumbnail slot="start">
-                <ion-img :src="doacao.source" :alt="doacao.title"></ion-img>
-              </ion-thumbnail>
-              <ion-label> 
+          <ion-item  button
+            v-for="doacao in doacoes"
+            @click="menuNavigation(`/SuasDoacoes/${doacao.id}`)"
+            :key="doacao.id"
+          >
+            <ion-thumbnail slot="start">
+              <ion-img :src="doacao.source" :alt="doacao.title"></ion-img>
+            </ion-thumbnail>
+
+            <ion-label> 
               <ion-list>
                 <ion-item>
                   {{doacao.title}}
@@ -24,9 +25,11 @@
                   Status: {{doacao.status}}
                 </ion-item>
               </ion-list>                
-              </ion-label >
-            </ion-item>
+            </ion-label >
+
+          </ion-item>
         </ion-list> 
+
       </toolbar-layout-arrow>
     </ion-content>
     <project-footer></project-footer>
@@ -41,11 +44,13 @@ import { useStore } from 'vuex'
 import { key } from '../store'
 
 import{
-    IonPage,
-    IonContent,
-    IonThumbnail,
-    IonLabel
-    } from '@ionic/vue';
+  IonPage,
+  IonContent,
+  IonThumbnail,
+  IonLabel
+} from '@ionic/vue';
+
+
 export default defineComponent({
   name: 'HomePage',
   components: {
@@ -54,22 +59,23 @@ export default defineComponent({
     IonThumbnail,
     IonLabel
   }, 
+
+  // Computed serve para carregar funcoes assim que a pagina é carregada
   computed:{
+
+    // Retorna as doações que estão na store
     doacoes(){
       const store = useStore(key)
       return store.getters.doacoes
     }
+
   },
-  setup() {
-    return {
-      
+  methods:{
+    // Muda o router atual
+    menuNavigation(url){
+        this.$router.push(url)
     }
-  },
-    methods:{
-        menuNavigation(url){
-            this.$router.push(url)
-        }
-    }
+  }
 });
 </script>
 

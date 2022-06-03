@@ -1,54 +1,54 @@
 <template>
     <ion-page>
-        <ion-content :fullscreen="true">
-            <toolbar-layout-arrow>
+      <ion-content :fullscreen="true">
+        <toolbar-layout-arrow>
+          <ion-item class="ion-margin">
+            <ion-label class="select-categ">Selecione a categoria</ion-label>
+            <ion-select interface="action-sheet" :interface-options="options">
+              <ion-select-option class="select-option" value="eletrodomesticos">Eletrodomésticos</ion-select-option>
+              <ion-select-option class="select-option" value="moveis">Móveis</ion-select-option>
+              <ion-select-option class="select-option" value="utilidades-domesticas">Utilidades domésticas</ion-select-option>
+              <ion-select-option class="select-option" value="livros-revistas">Livros e revistas</ion-select-option>
+              <ion-select-option class="select-option" value="brinquedos-jogos">Brinquedos e jogos</ion-select-option>
+              <ion-select-option class="select-option" value="roupas-acessorios">Roupas e acessórios</ion-select-option>
+              <ion-select-option class="select-option" value="alimentos">Alimentos</ion-select-option>
+              <ion-select-option class="select-option" value="higiene-pessoal">Higiene pessoal</ion-select-option>
+              <ion-select-option class="select-option" value="produtos-limpeza">Produtos de limpeza</ion-select-option>
+              <ion-select-option class="select-option" value="roupas-cama">Roupas de cama</ion-select-option>
+              <ion-select-option class="select-option" value="calçados">Calçados</ion-select-option>
+              <ion-select-option class="select-option" value="itens-tecnologia">Itens de tecnologia</ion-select-option>
+              <ion-select-option class="select-option" value="outros">Outros</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <h1>Cadastro do Produto</h1>
+
+          <div>
+            <div id="nomeProduto">
               <ion-item class="ion-margin">
-              <ion-label class="select-categ">Selecione a categoria</ion-label>
-              <ion-select interface="action-sheet" :interface-options="options">
-                <ion-select-option class="select-option" value="eletrodomesticos">Eletrodomésticos</ion-select-option>
-                <ion-select-option class="select-option" value="moveis">Móveis</ion-select-option>
-                <ion-select-option class="select-option" value="utilidades-domesticas">Utilidades domésticas</ion-select-option>
-                <ion-select-option class="select-option" value="livros-revistas">Livros e revistas</ion-select-option>
-                <ion-select-option class="select-option" value="brinquedos-jogos">Brinquedos e jogos</ion-select-option>
-                <ion-select-option class="select-option" value="roupas-acessorios">Roupas e acessórios</ion-select-option>
-                <ion-select-option class="select-option" value="alimentos">Alimentos</ion-select-option>
-                <ion-select-option class="select-option" value="higiene-pessoal">Higiene pessoal</ion-select-option>
-                <ion-select-option class="select-option" value="produtos-limpeza">Produtos de limpeza</ion-select-option>
-                <ion-select-option class="select-option" value="roupas-cama">Roupas de cama</ion-select-option>
-                <ion-select-option class="select-option" value="calçados">Calçados</ion-select-option>
-                <ion-select-option class="select-option" value="itens-tecnologia">Itens de tecnologia</ion-select-option>
-                <ion-select-option class="select-option" value="outros">Outros</ion-select-option>
-              </ion-select>
-            </ion-item>
-
-            <h1>Cadastro do Produto</h1>
-
-            <div>
-              <div id="nomeProduto">
-                <ion-item class="ion-margin">
-                <ion-input placeholder="Nome do Produto"></ion-input>
-                </ion-item>
-              </div>
+              <ion-input placeholder="Nome do Produto"></ion-input>
+              </ion-item>
             </div>
+          </div>
 
-            <div>
-              <div id="descricaoProduto">
-                <ion-item class="ion-margin">
-                <ion-input placeholder="Descrição do produto (tente colocar no máximo 200 caracteres)"></ion-input>
-                </ion-item>
-              </div>
+          <div>
+            <div id="descricaoProduto">
+              <ion-item class="ion-margin">
+              <ion-input placeholder="Descrição do produto (tente colocar no máximo 200 caracteres)"></ion-input>
+              </ion-item>
             </div>
+          </div>
 
-            <div>
-              <div id="endereço">
-                <ion-item class="ion-margin">
-                <ion-input placeholder="Endereço"></ion-input>
-                </ion-item>
-              </div>
+          <div>
+            <div id="endereço">
+              <ion-item class="ion-margin">
+              <ion-input placeholder="Endereço"></ion-input>
+              </ion-item>
             </div>
-          </toolbar-layout-arrow>
-        </ion-content>
-        <project-footer></project-footer>
+          </div>
+        </toolbar-layout-arrow>
+      </ion-content>
+      <project-footer></project-footer>
     </ion-page>
 </template>
 

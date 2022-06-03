@@ -2,15 +2,14 @@
   <ion-page>
     <ion-content>
       <toolbar-layout-arrow>
+
         <h1 id="TitleEditarDoacao">Editar doação</h1>
-
-
         <h2>{{doacao.categoria}}</h2>
         <ion-img id="ImagemDoacaoDetalhe" :src="doacao.source" :alt="doacao.title"></ion-img>
         <h2>{{doacao.title}}</h2>
         <h2>{{doacao.description}}</h2>
         <h2>{{doacao.status}}</h2>
-        
+
       </toolbar-layout-arrow>
     </ion-content>
   </ion-page>
@@ -38,7 +37,12 @@ export default defineComponent({
       IdDoacao: this.$route.params.id
     }
   },
+
+  /* Carrega todas as ações dentro do bloco 
+  assim  que a página é carregada */
   computed:{
+
+    // Coleta a doação pertencente ao ID atual do router
     doacao(): {
     id: string;
     title: string;
@@ -55,6 +59,7 @@ export default defineComponent({
   }
   ,
   watch:{
+    // Coleta o id da doação que está no router
     '$route'(currentRoute){
       this.IdDoacao = currentRoute.params.id;
     }
@@ -65,6 +70,7 @@ export default defineComponent({
 </script>
 
 <style>
+
 #ImagemDoacaoDetalhe{ 
     height: 300px;
 }

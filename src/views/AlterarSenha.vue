@@ -4,7 +4,6 @@
         <toolbar-layout>
             <div class="center">
               <h1>Alterar Senha</h1>
-              
               <div>
                 <h2>Senha Antiga</h2>
                 <div id="senhaAntiga">
@@ -22,7 +21,7 @@
                   </ion-item>
                 </div>
               </div>
-
+              
               <div>
                 <h2>Confirmar Nova Senha</h2>
                 <div id="confirmarSenha">

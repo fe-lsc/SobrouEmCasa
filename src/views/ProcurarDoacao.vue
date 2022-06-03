@@ -3,7 +3,7 @@
         <ion-content :fullscreen="true">
             <toolbar-layout-arrow>
               
-              <ion-item class="ion-margin">
+            <ion-item class="ion-margin">
               <ion-label class="select-categ">{{NomeFiltroCategoria}}</ion-label>
               <ion-select interface="action-sheet" :interface-options="options">
                 <ion-select-option class="select-option" value="eletrodomesticos" @click="ChangeNomeFiltroCategoria('Eletrodomésticos')">Eletrodomésticos</ion-select-option>
@@ -42,70 +42,69 @@
             <h1 >Anúncios recentes</h1>
 
             <ion-grid>
-            <ion-row>
+              <ion-row>
+                
+                <ion-col>
+                  <ion-card class="cardsAnuncios">
+                    <ion-card-content>
+                      <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/68/681215383550502.jpg" />
+                    </ion-card-content>
+                    <ion-card-header>
+                      <ion-card-subtitle>Livros e Revistas</ion-card-subtitle>
+                      <ion-card-title class="TituloAnunciosCards">Livro: Tudo o que nunca contei - Usado</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+                </ion-col>
+
+                <ion-col>
+                  <ion-card class="cardsAnuncios">
+                    <ion-card-content>
+                      <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/16/167246760824578.jpg" />
+                    </ion-card-content>
+                    <ion-card-header>
+                      <ion-card-subtitle>Higiene Pessoal</ion-card-subtitle>
+                      <ion-card-title class="TituloAnunciosCards">Pasta de dente, 5 unidades</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+                </ion-col>
+
+              </ion-row>
+              <ion-row>
+
+                <ion-col>
+                  <ion-card class="cardsAnuncios">
+                    <ion-card-content>
+                      <img class="ImagemCardsAnuncios" src="https://frankfurt.apollo.olxcdn.com/v1/files/py8lqbzx8ku41-RO/image;s=644x461" />
+                    </ion-card-content>
+                    <ion-card-header>
+                      <ion-card-subtitle>Brinquedos e Jogos</ion-card-subtitle>
+                      <ion-card-title class="TituloAnunciosCards">Brinquedo Pop It</ion-card-title>
+                    </ion-card-header>
+                  </ion-card>
+                </ion-col>
+
                 <ion-col>
                     <ion-card class="cardsAnuncios">
-                        
                         <ion-card-content>
-                            <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/68/681215383550502.jpg" />
-                        </ion-card-content>
-                        <ion-card-header>
-                            <ion-card-subtitle>Livros e Revistas</ion-card-subtitle>
-                            <ion-card-title class="TituloAnunciosCards">Livro: Tudo o que nunca contei - Usado</ion-card-title>
-                        </ion-card-header>
+                                <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/87/878206275860987.jpg" />
+                            </ion-card-content>
+                            <ion-card-header>
+                                <ion-card-subtitle>Roupas e acessórios</ion-card-subtitle>
+                                <ion-card-title class="TituloAnunciosCards">Jaqueta Usada</ion-card-title>
+                            </ion-card-header>
                     </ion-card>
                 </ion-col>
-                <ion-col>
-                    <ion-card class="cardsAnuncios">
-                        <ion-card-content>
-                            <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/16/167246760824578.jpg" />
-                        </ion-card-content>
-                        <ion-card-header>
-                            <ion-card-subtitle>Higiene Pessoal</ion-card-subtitle>
-                            <ion-card-title class="TituloAnunciosCards">Pasta de dente, 5 unidades</ion-card-title>
-                        </ion-card-header>
-                    </ion-card>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-            <ion-col>
-              <ion-card class="cardsAnuncios">
-                    <ion-card-content>
-                            <img class="ImagemCardsAnuncios" src="https://frankfurt.apollo.olxcdn.com/v1/files/py8lqbzx8ku41-RO/image;s=644x461" />
-                        </ion-card-content>
-                        <ion-card-header>
-                            <ion-card-subtitle>Brinquedos e Jogos</ion-card-subtitle>
-                            <ion-card-title class="TituloAnunciosCards">Brinquedo Pop It</ion-card-title>
-                        </ion-card-header>
-                </ion-card>
-            </ion-col>
-            <ion-col>
-                <ion-card class="cardsAnuncios">
-                    <ion-card-content>
-                            <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/87/878206275860987.jpg" />
-                        </ion-card-content>
-                        <ion-card-header>
-                            <ion-card-subtitle>Roupas e acessórios</ion-card-subtitle>
-                            <ion-card-title class="TituloAnunciosCards">Jaqueta Usada</ion-card-title>
-                        </ion-card-header>
-                </ion-card>
-            </ion-col>
-          </ion-row>
+              </ion-row>
             </ion-grid>
-          
           </toolbar-layout-arrow>
-          
         </ion-content>
         <project-footer></project-footer>
     </ion-page>
-    
 </template>
 
 <script lang="ts">
 import { IonContent, IonPage, IonItem, IonLabel, IonSelect, IonSelectOption } from '@ionic/vue';
 import { defineComponent } from 'vue';
-
-
 import { useStore } from 'vuex'
 import { key } from '../store'
 
@@ -135,13 +134,14 @@ export default defineComponent({
     }
   }
   ,
-  /*Tentativa de mudar o nome do campo para ficar apenas a categoria escolhida, mas ainda nao esta funcionando*/ 
+  
     methods:{
+        /*Tentativa de mudar o nome do campo para ficar apenas a categoria escolhida, mas ainda nao esta funcionando*/ 
         ChangeNomeFiltroCategoria(nome){
             this.NomeFiltroCategoria = nome
         },
         openSite(link: string){
-          /* NAO TA FUNFANDO, TA ABRINDO DENTRO DO LOCAL HOST, TENTEI HREF MAS AINDA SIM NAO FOI */
+          /* NAO TA FUNCIONANDO, TA ABRINDO DENTRO DO LOCAL HOST, TENTEI HREF MAS AINDA SIM NAO FOI */
           window.open(link, '_system')
           
         }
