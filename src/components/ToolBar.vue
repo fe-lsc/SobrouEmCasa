@@ -2,13 +2,11 @@
     <ion-page>
         <ion-header>
             <ion-toolbar >
-                
 
                 <ion-buttons @click="openMenu()" slot="start">
-                    <ion-icon :icon="menu" id="menuToolbar" slot="start"></ion-icon>
+                  <ion-icon :icon="menu" id="menuToolbar" slot="start"></ion-icon>
                 </ion-buttons>
-
-                <ion-img id="logoToolbar" src="../../assets/images/Logo.png"></ion-img>
+                <ion-img @click="goToHomePage()" id="logoToolbar" src="../../assets/images/Logo.png"></ion-img>
 
             </ion-toolbar>
         </ion-header>
@@ -30,6 +28,7 @@
     } from '@ionic/vue';
 import {menu} from 'ionicons/icons'
 
+
 export default{
     Components:{
         IonPage,
@@ -48,8 +47,18 @@ export default{
     methods:{
         openMenu(){
             menuController.open("app-menu")
+        },
+        goToHomePage(){
+            if(this.$router.currentRoute.value.path.includes("Doador")){
+                this.$router.push("/HomePageDoador")
+            }
+            else{
+                this.$router.push("/HomePageDoador")
+            } 
+            
+
         }
-    }
+    } 
 }
 </script>
 

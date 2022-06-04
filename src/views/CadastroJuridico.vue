@@ -71,7 +71,6 @@
                 </ion-buttons>
             </toolbar-layout-logo>
         </ion-content>        
-        <project-footer></project-footer>
     </ion-page>
 </template>
 
@@ -83,7 +82,7 @@ import{
         IonButtons
     } from '@ionic/vue';
 
-export default defineComponent({
+export default defineComponent({ 
   name: 'HomePage',
   components: {
       IonPage,
