@@ -26,10 +26,7 @@
           </div> -->
           <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png" @click="this.$router.push('/EditarPerfil')"></ion-img>
           <div>
-            <ion-img id="NovaDoacao" src="../../assets/images/Botao-NovaDoacao.svg" @click="this.$router.push('/RegistrarDoacao')"></ion-img>
-            <div>
-              <p id="novaDoacao">Nova Doação</p>
-            </div>
+            <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.svg" @click="this.$router.push('/RegistrarDoacao')"></ion-img>
           </div>
         </toolbar-layout>
       </ion-content>
@@ -55,10 +52,10 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style scoped>
 
 #NovaDoacao{ 
-  height: 400px;
+  margin: 100px 20px 0px 20px;
 }
 #EditarInformacoes{ 
   height: 63px;
@@ -121,9 +118,4 @@ export default defineComponent({
   margin: 16px 0px 0px 8px;
 }
 
-#novaDoacao {
-  font-family: 'Pacifico';
-  font-size: 28px;
-  position: absolute;
-}
 </style>
