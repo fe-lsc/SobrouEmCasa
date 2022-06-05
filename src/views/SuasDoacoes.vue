@@ -4,18 +4,22 @@
       <toolbar-layout-arrow>
         <h1 >Suas doações</h1>
         <ion-list>
-          <ion-item  button
+          <ion-item 
+          lines="full"
+          shape="round"
+            button
             v-for="doacao in doacoes"
             @click="menuNavigation(`/SuasDoacoes/${doacao.id}`)"
             :key="doacao.id"
+            id="doacaoSlot"
           >
             <ion-thumbnail slot="start">
-              <ion-img :src="doacao.source" :alt="doacao.title"></ion-img>
+              <ion-img id="fotoDoacaoSlot" :src="doacao.source" :alt="doacao.title"></ion-img>
             </ion-thumbnail>
 
-            <ion-label> 
+            <ion-label > 
               <ion-list>
-                <ion-item>
+                <ion-item >
                   {{doacao.title}}
                 </ion-item>
                 <ion-item>
@@ -28,6 +32,11 @@
             </ion-label >
 
           </ion-item>
+          <div>.</div>
+          <div>.</div>
+          <div>.</div>
+          <div>.</div>
+
         </ion-list> 
 
       </toolbar-layout-arrow>
@@ -79,3 +88,21 @@ export default defineComponent({
 });
 </script>
 
+<style>
+#fotoDoacaoSlot{
+  width: 75px;
+  height: 155px; 
+  margin-left: -10px;
+  margin-top: -50px;
+  
+}
+#doacaoSlot{
+  width: 300px;
+  height: 100%; 
+  margin-block-end: 10px;
+  --background: white;
+  --border-color: white;
+  --border-radius: 10px;
+  margin-left: 15px;
+}
+</style>

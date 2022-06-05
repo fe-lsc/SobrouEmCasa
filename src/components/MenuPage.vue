@@ -49,7 +49,7 @@ export default{
                 },
                 {
                     title: 'Sobre nós',
-                    url: '/SobreNos'
+                    url: '/SobreNos' 
                 }
             ]
         }

@@ -53,7 +53,7 @@ export default{
                 this.$router.push("/HomePageDoador")
             }
             else{
-                this.$router.push("/HomePageDoador")
+                this.$router.push("/HomePageJuridico")
             } 
             
 

@@ -38,8 +38,8 @@
                             <ion-input type="password" required v-model="Senha" />
                         </ion-item>
                         <ion-item color="light"  class="inputCadastro">
-                            <ion-label position="floating">Finalidade Instituição:</ion-label>
-                            <ion-textarea rows="5" v-model="FinalidadeInstituicao"></ion-textarea>
+                            <ion-label position="floating">Finalidade Instituição (Max 150 caracteres):</ion-label>
+                            <ion-textarea maxlength="150" rows="5" v-model="FinalidadeInstituicao"></ion-textarea>
                         </ion-item>
                         <ion-item color="light"  class="inputCadastro">
                             <ion-label position="floating">Telefone:</ion-label>
