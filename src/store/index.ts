@@ -13,7 +13,8 @@ export interface State {
     status: string;
     ONG: string;
     categoria: string;
-    source: string; }[]
+    source: string; 
+    endereco: string;}[]
 }
 
 // define injection key
@@ -31,7 +32,8 @@ export const store = createStore<State>({
         status: 'Disponível',
         ONG: '',
         categoria: 'Higiene Pessoal',
-        source: 'https://img.olx.com.br/images/16/167246760824578.jpg'
+        source: 'https://img.olx.com.br/images/16/167246760824578.jpg',
+        endereco: 'Alameda das Verbenas 343'
       },
       {
         id: "2",  
@@ -41,7 +43,8 @@ export const store = createStore<State>({
         status: 'Doado',
         ONG: 'Amigos do Bem',
         categoria: 'Brinquedos e Jogos',
-        source: 'https://frankfurt.apollo.olxcdn.com/v1/files/py8lqbzx8ku41-RO/image;s=644x461'
+        source: 'https://frankfurt.apollo.olxcdn.com/v1/files/py8lqbzx8ku41-RO/image;s=644x461',
+        endereco: 'Rua das angelicas 232'
       },
       {
         id: "3", 
@@ -51,7 +54,8 @@ export const store = createStore<State>({
         status: 'Disponível',
         ONG: '',
         categoria: 'Livros e Revistas',
-        source: 'https://img.olx.com.br/images/68/681215383550502.jpg'
+        source: 'https://img.olx.com.br/images/68/681215383550502.jpg',
+        endereco: 'Joao Wagner Wey 111'
       },
       {
         id: "4", 
@@ -61,7 +65,8 @@ export const store = createStore<State>({
         status: 'Disponível',
         ONG: '',
         categoria: 'Roupas e acessórios',
-        source: 'https://img.olx.com.br/images/87/878206275860987.jpg'
+        source: 'https://img.olx.com.br/images/87/878206275860987.jpg',
+        endereco: 'Avenida General Carneiro 2333'
       }
     ]
   }
