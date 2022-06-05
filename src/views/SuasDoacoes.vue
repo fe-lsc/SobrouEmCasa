@@ -25,9 +25,6 @@
                 <ion-item>
                   {{doacao.categoria}}
                 </ion-item>
-                <ion-item>
-                  Status: {{doacao.status}}
-                </ion-item>
               </ion-list>                
             </ion-label >
 
@@ -90,10 +87,10 @@ export default defineComponent({
 
 <style>
 #fotoDoacaoSlot{
-  width: 75px;
-  height: 155px; 
-  margin-left: -10px;
-  margin-top: -50px;
+  width: 65px;
+  height: 100px; 
+  margin-left: -5px;
+  margin-top: -22px;
   
 }
 #doacaoSlot{

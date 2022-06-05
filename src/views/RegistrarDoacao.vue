@@ -2,6 +2,9 @@
     <ion-page>
       <ion-content :fullscreen="true">
         <toolbar-layout-arrow>
+
+          <h1>Cadastro do Produto</h1>
+
           <ion-item  color="light"  class="ion-margin">
             <ion-label class="select-categ">Selecione a categoria</ion-label>
             <ion-select interface="action-sheet" :interface-options="options">
@@ -21,31 +24,40 @@
             </ion-select>
           </ion-item>
 
-          <h1>Cadastro do Produto</h1>
+          
 
-          <div>
-            <div  id="nomeProduto">
-              <ion-item color="light"  class="ion-margin">
-              <ion-input placeholder="Nome do Produto"></ion-input>
-              </ion-item>
-            </div>
-          </div>
+          <ion-item color="light"  class="inputCadastro">
+            <ion-label position="floating">Titulo:</ion-label>
+            <ion-input  type="text" required v-model="Titulo" />
+          </ion-item>
 
-          <div>
-            <div id="descricaoProduto">
-              <ion-item color="light"  class="ion-margin">
-              <ion-input placeholder="Descrição do produto (Máx 200 letras)"></ion-input>
-              </ion-item>
-            </div>
-          </div>
+          <ion-item color="light"  class="inputCadastro">
+              <ion-label position="floating">Descrição (Max 150 caracteres):</ion-label>
+              <ion-textarea maxlength="150"   rows="5" v-model="Descricao"></ion-textarea>
+          </ion-item>
 
-          <div>
-            <div id="endereço">
-              <ion-item color="light" class="ion-margin">
-              <ion-input placeholder="Endereço"></ion-input>
-              </ion-item>
-            </div>
-          </div>
+          <h4 id="anexarImagem">Anexar Imagem</h4>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-img id="ImagemDoacaoDetalhe" src="https://img.olx.com.br/images/16/167246760824578.jpg" alt="Pasta de Dente"></ion-img>
+              </ion-col>
+              <ion-col>
+                  <ion-img  id="PlusButton" src="../../assets/images/PlusButton.png"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
+
+          <ion-item color="light"  class="inputCadastro">
+            <ion-label position="floating">Endereço:</ion-label>
+            <ion-input  type="text" required v-model="Endereco" />
+          </ion-item>
+
+          <ion-button @click="this.$router.push('/HomePageDoador')" fill="undefined">
+          <ion-img id="EdicaoButton" src="../../assets/images/FinalizarCadastro.png"></ion-img>
+        </ion-button>
+
         </toolbar-layout-arrow>
       </ion-content>
       <project-footer></project-footer>
@@ -102,8 +114,5 @@ h1{
   border-bottom: 5px solid #B6D9E1;
 }
 
-#descricaoProduto {
-  height: 80px;
-}
 
 </style>

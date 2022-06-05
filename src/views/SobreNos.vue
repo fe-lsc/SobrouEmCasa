@@ -21,7 +21,7 @@
           e nos incentivaria ainda mais!
           </p>
         </ion-text>
-        <ion-item >
+        <ion-item lines="none">
             <ion-img  slot="start" src="/../../assets/images/PixLogo.png"></ion-img>
             <ion-text> CPF: 422.175.778-75</ion-text>
         </ion-item> 

@@ -125,28 +125,4 @@ export default defineComponent({
 
 
 
-#ImagemDoacaoDetalhe{ 
-    height: 100px;
-    width: 150px;
-    margin-left: -30px;
-}
-#TitleEditarDoacao{ 
-   /* Mudar fonte pra pacifico (Não entendi como mudar)*/
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#EdicaoButton{
-  margin: 25px;
-}
-
-#anexarImagem{
-  text-align: left;
-  margin-left: 5px;
-}
-#PlusButton{
-  margin: 0px; 
-  height:80px;
-  width: 80px;
-
-}
 </style>
