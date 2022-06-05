@@ -3,7 +3,11 @@ ion-toolbar {
     --background: var(--ion-toolbar-color);
 }
 
-
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../../public/assets/fonts/Pacifico.ttf') format('truetype');
+  font-weight: normal;
+}
 
 #ImagemDoacaoDetalhe{ 
   height: 100px;
