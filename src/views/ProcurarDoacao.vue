@@ -3,7 +3,7 @@
         <ion-content :fullscreen="true">
             <toolbar-layout-arrow>
               
-            <ion-item class="ion-margin">
+            <ion-item color="light" class="ion-margin">
               <ion-label class="select-categ">{{NomeFiltroCategoria}}</ion-label>
               <ion-select interface="action-sheet" :interface-options="options">
                 <ion-select-option class="select-option" value="eletrodomesticos" @click="ChangeNomeFiltroCategoria('Eletrodomésticos')">Eletrodomésticos</ion-select-option>
@@ -22,7 +22,7 @@
               </ion-select>
             </ion-item>
 
-            <ion-item class="ion-margin">
+            <ion-item color="light" class="ion-margin">
               <ion-label class="select-categ">Filtrar por distância</ion-label>
               <ion-select interface="action-sheet" :interface-options="options">
                 <ion-select-option class="select-option" value="1-kilometro">1 Kilômetro</ion-select-option>
@@ -45,7 +45,7 @@
               <ion-row>
                 
                 <ion-col>
-                  <ion-card class="cardsAnuncios">
+                  <ion-card  class="cardsAnuncios">
                     <ion-card-content>
                       <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/68/681215383550502.jpg" />
                     </ion-card-content>
@@ -96,6 +96,12 @@
                 </ion-col>
               </ion-row>
             </ion-grid>
+
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            <div>.</div>
+            
           </toolbar-layout-arrow>
         </ion-content>
         <project-footer></project-footer>

@@ -1,7 +1,7 @@
 <template>
     <ion-menu menu-id="app-menu" content-id="main-content" >
         <ion-header>
-            <ion-toolbar>
+            <ion-toolbar color="light">
                 <ion-title>
                     Mais opções
                 </ion-title>
