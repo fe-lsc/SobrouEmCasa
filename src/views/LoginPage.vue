@@ -6,25 +6,21 @@
         <ion-img id="logo" :src="Logo"></ion-img>
       </div>
       
-      <div>
-        <div class="login">
-          <p>Usuário (Email):</p>
-          <ion-item>
-          <ion-input></ion-input>
+      <form class="ion-padding">
+        <ion-list >
+          <ion-item color="light" class="inputCadastro">
+              <ion-label position="floating">Usuário (Email):</ion-label>
+              <ion-input  type="email" required v-model="Usuario" />
           </ion-item>
-        </div>
-      </div>
-      
-      <div>
-        <div class="login">
-          <p>Senha:</p>
-          <ion-item>
-          <ion-input></ion-input>
+          <ion-item  color="light" class="inputCadastro">
+              <ion-label position="floating">Senha:</ion-label>
+              <ion-input type="password" required v-model="Senha" />
           </ion-item>
-        </div> 
-      </div>
+        </ion-list>
+        <ion-button  fill="solid" size="small"  type="submit" expand="full" >Entrar</ion-button> 
+      </form>
 
-      <h3>Entrar</h3>
+    
 
       <p id="clique-cadastro">Não tem cadastro? <a href="cadastro">Cadastre-se aqui!</a></p>
 
@@ -68,6 +64,7 @@ ion-item{
   --background: var(--ion-background-color);
 }
 
+
 #logo{
   margin-top: 320px;
   height: 40px;
@@ -89,5 +86,6 @@ h3 {
 
 #clique-cadastro {
   text-align: center;
+  margin-top: 90px;
 }
 </style>

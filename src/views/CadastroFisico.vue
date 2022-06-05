@@ -3,59 +3,66 @@
         <ion-content :fullscreen="true" color="tertiary">
             <toolbar-layout-logo>
 
-                
+                <form class="ion-padding">
+                    <ion-list >
+                        <ion-item color="light" class="inputCadastro">
+                            <ion-label position="floating">Nome Completo:</ion-label>
+                            <ion-input  type="text" required v-model="NomeCompleto" />
+                        </ion-item>
+                        <ion-item  color="light" class="inputCadastro">
+                            <ion-label position="floating">E-mail:</ion-label>
+                            <ion-input type="email" required v-model="Email" />
+                        </ion-item>
+                        <ion-item  color="light" class="inputCadastro">
+                            <ion-label position="floating">CPF:</ion-label>
+                            <ion-input type="text" required v-model="CPF" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Data Nascimento:</ion-label>
+                            <ion-input type="text" required v-model="DataNascimento" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Sexo:</ion-label>
+                            <ion-input type="text" required v-model="Sexo" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Telefone:</ion-label>
+                            <ion-input type="text" required v-model="Telefone" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Celular:</ion-label>
+                            <ion-input type="text" required v-model="Celular" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Senha:</ion-label>
+                            <ion-input type="password" required v-model="Senha" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Estado:</ion-label>
+                            <ion-input type="text" required v-model="Estado" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Cidade:</ion-label>
+                            <ion-input type="text" required v-model="Cidade" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Rua:</ion-label>
+                            <ion-input type="text" required v-model="Rua" />
+                        </ion-item>
+                        <ion-item color="light"  class="inputCadastro">
+                            <ion-label position="floating">Número:</ion-label>
+                            <ion-input type="text" required v-model="Numero" />
+                        </ion-item>
+                    </ion-list>
+                    <ion-button  type="submit" expand="block" @click="this.$router.push('/HomePageDoador')">Criar</ion-button> 
+                </form>
 
-                <div class="login">
-                    <p>Nome Completo:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>E-Mail:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>CPF:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Data Nascimento:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Sexo:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Celular:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Telefone:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Senha:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Estado:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Cidade:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Rua:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <div class="login">
-                    <p>Número:</p>
-                    <ion-item> <ion-input></ion-input> </ion-item>
-                </div>
-                <ion-button id="Criar" @click="this.$router.push('/HomePageDoador')">
-                Criar
-                </ion-button>
+                <!-- Divs para o botao de criar ficar na tela, unico jeito que eu achei -->
+               <div>  .</div>
+               <div> . </div>
+               <div> . </div>
+               <div>  .</div>
+
             </toolbar-layout-logo>
         </ion-content>
     </ion-page>
@@ -74,9 +81,21 @@ export default defineComponent({
   components: {
       IonPage,
       IonButton
-  }, setup() {
-    return {
-    }
+  }, data(){
+      return{
+          NomeCompleto: '',
+          Email: '',
+          CPF: '',
+          DataNascimento: '',
+          Sexo: '',
+          Senha: '', 
+          Telefone: '',
+          Celular: '',
+          Estado: '',
+          Cidade: '',
+          Rua: '',
+          Numero: ''
+      };
   }
 });
 </script>

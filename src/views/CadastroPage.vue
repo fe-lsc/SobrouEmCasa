@@ -1,7 +1,14 @@
 <template>
   <ion-page>
     <div id="container">
-      <ion-content :fullscreen="true">      
+      <ion-content :fullscreen="true">   
+      <ion-toolbar>
+        <ion-buttons  >
+          <ion-img @click="goBack()" id="ArrowBackToolbarOnly"  src="../../assets/icon/ArrowBack.png"></ion-img>
+          ion-back
+        </ion-buttons>
+        <ion-text>teste</ion-text>
+      </ion-toolbar>   
       <div>
         <ion-img id="logo" :src="Logo"></ion-img>
       </div>
@@ -15,13 +22,14 @@
           <img src="/../../assets/images/user-alt.png">
         </ion-button>
       </div>
+      
       </ion-content>
     </div>    
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonPage, IonImg, IonButton } from '@ionic/vue';
+import { IonContent, IonPage, IonImg, IonButton, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -30,12 +38,18 @@ export default defineComponent({
     IonContent,
     IonPage,
     IonImg,
-    IonButton
+    IonButton, IonToolbar
   }, setup() {
     return {
       Logo : "../../assets/images/Logo.png",
     }
-  }
+  },
+    methods:{
+        goBack(){
+            const router = this.$router
+            router.go(-1);  
+        }
+    }
 });
 </script>
 
@@ -47,14 +61,21 @@ ion-button {
   --padding-left: 50px;
 }
 
+
+#ArrowBackToolbarOnly {
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
 #pj {
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #pf {
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
+ 
 }
 
 #container {

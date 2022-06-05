@@ -4,10 +4,11 @@
             <ion-toolbar >
 
                 <ion-buttons @click="goBack()" slot="end">
-                    <ion-img id="ArrowBackToolbar" slot="end" src="../../assets/icon/ArrowBack.png"></ion-img>
+                <ion-img id="ArrowBackToolbar" slot="end" src="../../assets/icon/ArrowBack.png"></ion-img>
+                ion-back
                 </ion-buttons>
                 
-                <ion-img id="logoToolbar" src="../../assets/images/Logo.png"></ion-img>
+                <ion-img id="logoToolbarOnlyLogo" src="../../assets/images/Logo.png"></ion-img>
 
             </ion-toolbar>
         </ion-header>
@@ -55,5 +56,10 @@ export default{
 
 
 <style>
-
+#logoToolbarOnlyLogo{
+    margin-top: 1px;
+    height: 40px;
+    color: white;
+    margin-left: 10%;
+}
 </style>

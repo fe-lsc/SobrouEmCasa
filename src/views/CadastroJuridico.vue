@@ -66,7 +66,7 @@
                             <ion-input type="text" required v-model="Numero" />
                         </ion-item>
                     </ion-list>
-                    <ion-button type="submit" expand="block">Criar</ion-button>
+                    <ion-button @click="this.$router.push('/HomePageJuridico')" type="submit" expand="block">Criar</ion-button>
                 </form>
 
                 <!-- Divs para o botao de criar ficar na tela, unico jeito que eu achei -->

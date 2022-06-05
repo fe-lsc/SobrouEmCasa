@@ -2,7 +2,7 @@
     <ion-page>
       <ion-content :fullscreen="true">
         <toolbar-layout-arrow>
-          <ion-item class="ion-margin">
+          <ion-item  color="light"  class="ion-margin">
             <ion-label class="select-categ">Selecione a categoria</ion-label>
             <ion-select interface="action-sheet" :interface-options="options">
               <ion-select-option class="select-option" value="eletrodomesticos">Eletrodomésticos</ion-select-option>
@@ -24,8 +24,8 @@
           <h1>Cadastro do Produto</h1>
 
           <div>
-            <div id="nomeProduto">
-              <ion-item class="ion-margin">
+            <div  id="nomeProduto">
+              <ion-item color="light"  class="ion-margin">
               <ion-input placeholder="Nome do Produto"></ion-input>
               </ion-item>
             </div>
@@ -33,15 +33,15 @@
 
           <div>
             <div id="descricaoProduto">
-              <ion-item class="ion-margin">
-              <ion-input placeholder="Descrição do produto (tente colocar no máximo 200 caracteres)"></ion-input>
+              <ion-item color="light"  class="ion-margin">
+              <ion-input placeholder="Descrição do produto (Máx 200 letras)"></ion-input>
               </ion-item>
             </div>
           </div>
 
           <div>
             <div id="endereço">
-              <ion-item class="ion-margin">
+              <ion-item color="light" class="ion-margin">
               <ion-input placeholder="Endereço"></ion-input>
               </ion-item>
             </div>

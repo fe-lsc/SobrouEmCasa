@@ -1,7 +1,7 @@
 <template>
     <ion-page>
       <ion-content :fullscreen="true" >
-        <toolbar-layout>
+        <toolbar-layout-arrow>
             <div class="center">
               <h1>Editar Perfil</h1>
               <h2>Foto de Perfil</h2>
@@ -35,7 +35,7 @@
               <ion-button class="ion-margin" color="danger">Alterar Senha</ion-button>
               <ion-button class="ion-margin" color="danger">Apagar Conta</ion-button>
             </div>
-            </toolbar-layout>
+            </toolbar-layout-arrow>
       </ion-content>
       <project-footer></project-footer>
     </ion-page>
