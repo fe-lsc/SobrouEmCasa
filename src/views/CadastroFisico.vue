@@ -2,6 +2,9 @@
     <ion-page>
         <ion-content :fullscreen="true" color="tertiary">
             <toolbar-layout-logo>
+
+                
+
                 <div class="login">
                     <p>Nome Completo:</p>
                     <ion-item> <ion-input></ion-input> </ion-item>
