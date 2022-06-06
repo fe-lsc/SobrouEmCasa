@@ -24,10 +24,10 @@
               <ion-img class="star" src="../../assets/images/Star-White.svg"></ion-img>
             </div>
           </div> -->
-          <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.png" @click="this.$router.push('/EditarPerfil')"></ion-img>
-          <div>
-            <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.svg" @click="this.$router.push('/RegistrarDoacao')"></ion-img>
-          </div>
+          <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.svg" @click="this.$router.push('/EditarPerfilFisico')"></ion-img>
+          
+          <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.svg" @click="this.$router.push('/RegistrarDoacao')"></ion-img>
+          
         </toolbar-layout>
       </ion-content>
       <project-footer></project-footer>
@@ -56,9 +56,12 @@ export default defineComponent({
 
 #NovaDoacao{ 
   margin: 100px 20px 0px 20px;
+  
 }
 #EditarInformacoes{ 
-  height: 63px;
+  margin-left: -10%;
+  height: 40px;
+  width: 450px;
 }
 
 #userInfo {
