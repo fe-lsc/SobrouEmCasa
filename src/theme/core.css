@@ -21,6 +21,7 @@ ion-toolbar {
 
 #EdicaoButton{
 margin: 25px;
+margin-top: 10px;
 }
 
 #anexarImagem{
@@ -28,9 +29,9 @@ text-align: left;
 margin-left: 12px;
 }
 #PlusButton{
-margin: 0px; 
-height:80px;
-width: 80px;
+margin: 15px; 
+height:60px;
+width: 60px;
 
 }
 
