@@ -17,7 +17,7 @@
               <ion-input type="password" required v-model="Senha" />
           </ion-item>
         </ion-list>
-        <ion-button  fill="solid" size="small"  type="submit" expand="full" >Entrar</ion-button> 
+        <ion-button  fill="solid" size="small"  type="submit" expand="full" @click="login">Entrar</ion-button> 
       </form>
 
     
@@ -29,9 +29,13 @@
   </ion-page>
 </template>
 
-<script lang="ts">
+<script lang="ts"> 
 import { IonContent, IonPage, IonImg, IonInput, IonItem } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import UserService from '../services/User.Service'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 
 export default defineComponent({
   name: 'LoginPage',
@@ -41,12 +45,45 @@ export default defineComponent({
     IonImg,
     IonInput,
     IonItem
-  }, setup() {
+  }, data(){
+      return{
+          Usuario: "",
+          Senha: ""
+      };
+  }
+  , setup() {
     return {
       Logo : "../../assets/images/Logo.png",
     }
-  }
-});
+  },
+    methods:{
+        login(){
+            // const teste = async() => {this.axios.get('https://cat-fact.herokuapp.com/facts')
+            // .then(function (response) {
+            // console.log(response.data) ;
+            // window.prompt("1")
+            // })
+            // .catch(function (error) {
+            // console.log(error) ;
+            // window.prompt("2")
+            // }); }
+
+            // window.prompt("3")
+            let body = { email: this.Usuario, senha: this.Senha };
+            UserService.login(body).then((response) => { 
+              // window.prompt("PASSOU LOGIN");
+              // console.log("Usuario " + this.Usuario + " logado")
+              // console.log(response)
+              this.$router.push("/HomePageDoador")
+            }) 
+            .catch((error) => {
+              // window.prompt("CATCH ERRO LOGIN");
+              console.log("ERRO : " + error.STATUS); //Logs a string: Error: Request failed with status code 404
+            });
+            
+        }
+    } 
+}); 
 </script>
 
 <style>
