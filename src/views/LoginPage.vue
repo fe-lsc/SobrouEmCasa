@@ -34,7 +34,6 @@ import { IonContent, IonPage, IonImg, IonInput, IonItem } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import UserService from '../services/User.Service'
 import axios from 'axios'
-import VueAxios from 'vue-axios'
 
 
 export default defineComponent({
