@@ -54,7 +54,7 @@
                             <ion-input type="text" required v-model="Numero" />
                         </ion-item>
                     </ion-list>
-                    <ion-button  type="submit" expand="block" @click="this.$router.push('/HomePageDoador')">Criar</ion-button> 
+                    <ion-button  type="submit" expand="block" @click="cadastrar">Criar</ion-button> 
                 </form>
 
                 <!-- Divs para o botao de criar ficar na tela, unico jeito que eu achei -->
@@ -71,6 +71,7 @@
 <script lang="ts">
 
 import { defineComponent } from 'vue';
+import UserService from '../services/User.Service'
 import{
         IonPage,
         IonButton
@@ -96,7 +97,20 @@ export default defineComponent({
           Rua: '',
           Numero: ''
       };
-  }
+  },
+    methods:{
+        cadastrar(){ 
+            let body = { nome: this.NomeCompleto, login: this.Email, senha:this.Senha, tipoUsuario: 0, cpf: this.CPF, email: this.Email, dataNascimento: this.DataNascimento, telefone: this.Telefone, celular: this.Celular, endereco: {estado: this.Estado, cidade: this.Cidade, rua: this.Rua, numero: this.Numero}};
+            UserService.cadastrarPF(body).then((response) => {  
+              this.$router.push('/HomePageDoador')
+            }) 
+            .catch((error) => {
+              window.prompt("CATCH ERRO LOGIN");
+              console.log("ERRO : " + error.STATUS); //Logs a string: Error: Request failed with status code 404
+            });
+             
+        }
+    } 
 });
 </script>
 

@@ -34,6 +34,7 @@ https://github.com/M4teusPrado/SobrouEmCasa.API.git
 #### 5 - Baixe este projeto
 ######    5.1 - Abra o terminal na pasta em que você instalou.
 ######    5.2 - Digite o comando npm install --save vuex@next
+######    5.2 - Digite o comando npm install axios
 ######    5.3 - Digite o comando "Ionic serve"
 ######    5.4 - Irá abrir o app.
 
