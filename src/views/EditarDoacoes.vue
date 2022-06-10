@@ -3,7 +3,7 @@
     <ion-content>
       <toolbar-layout-arrow>
 
-        <h1 id="TitleEditarDoacao">Editar doação</h1>
+        <h1 id="TitleEditarDoacao">Editar Doação</h1>
 
         <ion-item  color="light"  class="ion-margin">
           <ion-label class="select-categ">Selecione a categoria</ion-label>
@@ -123,6 +123,12 @@ export default defineComponent({
 
 <style>
 
+#TitleEditarDoacao {
+  font-family: 'Pacifico';
+}
 
+#anexarImagem {
+  font-family: 'Pacifico';
+}
 
 </style>

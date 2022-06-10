@@ -33,8 +33,6 @@
 import { IonContent, IonPage, IonImg, IonInput, IonItem } from '@ionic/vue';
 import { defineComponent } from 'vue';
 import UserService from '../services/User.Service'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
 
 
 export default defineComponent({
@@ -58,16 +56,28 @@ export default defineComponent({
   },
     methods:{
         login(){
-            // const teste = async() => {this.axios.get('https://cat-fact.herokuapp.com/facts')
-            // .then(function (response) {
-            // console.log(response.data) ;
-            // window.prompt("1")
-            // })
-            // .catch(function (error) {
-            // console.log(error) ;
-            // window.prompt("2")
-            // }); }
+            UserService.login({})
+            .then(function (response) {
+            console.log(response.data) ;
+            window.prompt("1")
+            })
+            .catch(function (error) {
+            console.log(error) ;
+            window.prompt("2")
+            });
 
+            // window.prompt("3")
+            // let body = { email: this.Usuario, senha: this.Senha };
+            // UserService.login(body).then((response) => { 
+            //   // window.prompt("PASSOU LOGIN");
+            //   // console.log("Usuario " + this.Usuario + " logado")
+            //   // console.log(response)
+            //   this.$router.push("/HomePageDoador")
+            // }) 
+            // .catch((error) => {
+            //   // window.prompt("CATCH ERRO LOGIN");
+            //   console.log("ERRO : " + error.STATUS); //Logs a string: Error: Request failed with status code 404
+            // });
             
         }
     } 

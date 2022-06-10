@@ -3,7 +3,7 @@
       <ion-content :fullscreen="true">
         <toolbar-layout-arrow>
 
-          <h1>Cadastro do Produto</h1>
+          <h1 id="cadastroProdutoTitulo">Cadastro do Produto</h1>
 
           <ion-item  color="light"  class="ion-margin">
             <ion-label class="select-categ">Selecione a categoria</ion-label>
@@ -44,7 +44,7 @@
                 <ion-img id="ImagemDoacaoDetalhe" src="https://img.olx.com.br/images/16/167246760824578.jpg" alt="Pasta de Dente"></ion-img>
               </ion-col>
               <ion-col>
-                  <ion-img  id="PlusButton" src="../../assets/images/PlusButton.png"></ion-img>
+                  <ion-img  id="PlusButton" src="../../assets/images/PlusButton.svg"></ion-img>
               </ion-col>
             </ion-row>
           </ion-grid> 
@@ -114,5 +114,7 @@ h1{
   border-bottom: 5px solid #B6D9E1;
 }
 
-
+#cadastroProdutoTitulo {
+  font-family: 'Pacifico';
+}
 </style>

@@ -39,7 +39,7 @@
               </ion-select>
             </ion-item>
 
-            <h1 >Anúncios recentes</h1>
+            <h1 id="anunciosRecentes">Anúncios recentes</h1>
 
             <ion-grid>
               <ion-row>
@@ -161,3 +161,11 @@ export default defineComponent({
   }
 });
 </script>
+
+<style>
+
+#anunciosRecentes {
+  font-family: 'Pacifico';
+}
+
+</style>
