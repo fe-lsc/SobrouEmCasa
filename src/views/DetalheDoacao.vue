@@ -2,11 +2,41 @@
     <ion-page>
       <ion-content :fullscreen="true" color="tertiary">
         <toolbar-layout-arrow>
-            <ion-img id="ImagemDetalheDoacao" src="https://img.olx.com.br/images/87/878206275860987.jpg"></ion-img>
-            <h2 class="ion-text-center">Jaqueta Usada</h2>
-            <p>Categoria: Roupas e acessórios</p>
+          <ion-slides pager="true" :options="slideOpts">
+            <ion-slide>
+              <ion-img id="ImagemDetalheDoacao" src="https://img.olx.com.br/images/87/878206275860987.jpg"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img id="ImagemDetalheDoacao" src="https://cf.shopee.com.br/file/ea797822b6c7559a509b4e17243a168c"></ion-img>
+            </ion-slide>
+            <ion-slide>
+              <ion-img id="ImagemDetalheDoacao" src="https://i.pinimg.com/736x/5e/2d/cf/5e2dcf488c20d875068be066dc6aade5.jpg"></ion-img>
+            </ion-slide>
+          </ion-slides>
+
+          <h2 class="ion-text-center"><strong>Jaqueta Usada</strong></h2>
+          <div id="texto">
+            <span class="title-produto">Categoria: </span>
+            <p>Roupas e acessórios</p>
+            <span class="title-produto">Descrição: </span>
             <p>Jaqueta usada e muito bem conservada</p>
-            <ion-img id="VerNoMapaButton" src="../../assets/images/VerNoMapa.svg"></ion-img>
+            <span class="title-produto">Endereço: </span>
+            <p>Alameda das Verbenas, 343</p>
+          </div>          
+          <ion-img id="VerNoMapaButton" src="../../assets/images/VerNoMapa.svg"></ion-img>
+
+          <div>
+            .
+          </div>
+          <div>
+            .
+          </div>
+          <div>
+            .
+          </div>
+          <div>
+            .
+          </div>
         </toolbar-layout-arrow>
       </ion-content>
       <project-footer></project-footer>
@@ -39,10 +69,20 @@ export default defineComponent({
    margin: 0%;
 }
 #VerNoMapaButton{
-  height: 300px;
-   width: 300px;
-   margin-left: 35px;
-   margin-top: 59px;
+  margin-left: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 35px;
+  width: auto;
+}
+
+.title-produto {
+  font-family: 'Pacifico';
+}
+
+#texto {
+  font-size: 24px;
+  margin: 30px;
 }
 
 </style>
