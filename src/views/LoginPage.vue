@@ -68,18 +68,6 @@ export default defineComponent({
             // window.prompt("2")
             // }); }
 
-            // window.prompt("3")
-            let body = { email: this.Usuario, senha: this.Senha };
-            UserService.login(body).then((response) => { 
-              // window.prompt("PASSOU LOGIN");
-              // console.log("Usuario " + this.Usuario + " logado")
-              // console.log(response)
-              this.$router.push("/HomePageDoador")
-            }) 
-            .catch((error) => {
-              // window.prompt("CATCH ERRO LOGIN");
-              console.log("ERRO : " + error.STATUS); //Logs a string: Error: Request failed with status code 404
-            });
             
         }
     } 
