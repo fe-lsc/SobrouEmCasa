@@ -35,9 +35,9 @@ export default defineComponent({
   }, 
   data(){
     return{
-      LinkInsta: "www.instagram.com",
-      LinkTwitter: "www.twitter.com",
-      LinkFacebook: "www.facebook.com"
+      LinkInsta: "http://www.instagram.com",
+      LinkTwitter: "http://www.twitter.com",
+      LinkFacebook: "http://www.facebook.com"
     }
   } 
   ,
@@ -46,7 +46,7 @@ export default defineComponent({
         
         openSite(link: string){
           /* NAO TA FUNFANDO, TA ABRINDO DENTRO DO LOCAL HOST, TENTEI HREF MAS AINDA SIM NAO FOI */
-          window.open(link, '_system')
+          window.open(link, '_blank')
           
         }
     }
