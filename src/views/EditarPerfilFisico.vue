@@ -3,8 +3,8 @@
       <ion-content :fullscreen="true" >
         <toolbar-layout-arrow>
             <div class="center">
-              <h1>Editar Perfil</h1>
-              <h2>Foto de Perfil</h2>
+              <h1 class="editar-perfil">Editar Perfil</h1>
+              <p class="editar-foto-perfil">Foto de Perfil</p>
               <ion-img id="EditarInformacoes" src="../../assets/icon/Perfil.svg"></ion-img>
               <ion-button id="BottonSelecionarFotoPerfil" color="secondary" class="ion-margin">Selecionar outra foto de perfil</ion-button>
               
@@ -46,7 +46,7 @@
                   <ion-input type="text" required v-model="Numero" />
               </ion-item>
               <ion-button @click="this.$router.push('/HomePageDoador')" fill="undefined">
-              <ion-img   id="EdicaoButton" src="../../assets/images/ConcluirEdicao.png"></ion-img>
+              <ion-img   id="EdicaoButton" src="../../assets/images/ConcluirEdicao.svg"></ion-img>
             </ion-button>
 
             
@@ -86,6 +86,10 @@ export default defineComponent({
 
 <style>
 
+.editar-perfil {
+  font-family: 'Pacifico';
+}
+
 .center {
   text-align: center;
 }
@@ -99,4 +103,10 @@ export default defineComponent({
   height: 50px;
 
 }
+
+.editar-foto-perfil {
+  font-family: 'Pacifico';
+  font-size: 19px;
+}
+
 </style>

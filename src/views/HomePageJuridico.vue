@@ -13,7 +13,7 @@
           <div id="textoDescricao">
             <p>É uma associação com a finalidade de atender a todos que a ela se dirigir.</p>
           </div>
-          <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.svg"  @click="this.$router.push('/EditarPerfilJuridico')"></ion-img>
+          <ion-img class="editarInformacoes" src="../../assets/images/EditarInformacoes.svg"  @click="this.$router.push('/EditarPerfilJuridico')"></ion-img>
           <h3>Prioridade de doações:</h3>
           <ul>
             <li>Alimentos</li>
@@ -31,13 +31,13 @@
 
 import { defineComponent } from 'vue';
 import{
-        IonPage, IonContent
+        IonPage, IonContent, IonImg
     } from '@ionic/vue';
 
 export default defineComponent({
   name: 'HomePageJuridico',
   components: {
-      IonPage, IonContent
+      IonPage, IonContent, IonImg
   }, setup() {
     return {
     }
@@ -52,10 +52,11 @@ export default defineComponent({
   border-radius: 10px;
   margin-top: 170px;
 }
-#EditarInformacoes{ 
-  margin-left: -10%;
-  height: 40px;
-  width: 450px;
+.editarInformacoes{ 
+  margin-left: 0;
+  margin-top: 25px;
+  height: 35px;
+  width: auto;
 }
 
 #userInfo {

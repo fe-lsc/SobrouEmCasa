@@ -24,7 +24,7 @@
               <ion-img class="star" src="../../assets/images/Star-White.svg"></ion-img>
             </div>
           </div> -->
-          <ion-img id="EditarInformacoes" src="../../assets/images/EditarInformacoes.svg" @click="this.$router.push('/EditarPerfilFisico')"></ion-img>
+          <ion-img class="editarInformacoes" src="../../assets/images/EditarInformacoes.svg" @click="this.$router.push('/EditarPerfilFisico')"></ion-img>
           
           <ion-img id="NovaDoacao" src="../../assets/images/NovaDoacao.svg" @click="this.$router.push('/RegistrarDoacao')"></ion-img>
           
@@ -58,10 +58,11 @@ export default defineComponent({
   margin: 100px 20px 0px 20px;
   
 }
-#EditarInformacoes{ 
-  margin-left: -10%;
-  height: 40px;
-  width: 450px;
+.editarInformacoes{ 
+  margin-left: 0;
+  margin-top: 25px;
+  height: 35px;
+  width: auto;
 }
 
 #userInfo {

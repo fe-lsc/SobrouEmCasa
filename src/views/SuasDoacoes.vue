@@ -2,7 +2,7 @@
   <ion-page>
     <ion-content>
       <toolbar-layout-arrow>
-        <h1 >Suas doações</h1>
+        <h1 id="suasDoacoesTitulo">Suas Doações</h1>
         <ion-list>
           <ion-item 
           lines="full"
@@ -93,6 +93,11 @@ export default defineComponent({
   margin-top: -22px;
   
 }
+
+#suasDoacoesTitulo {
+  font-family: 'Pacifico';
+}
+
 #doacaoSlot{
   width: 90%;
   height: 100%; 

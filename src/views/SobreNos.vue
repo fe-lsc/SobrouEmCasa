@@ -3,7 +3,7 @@
   <ion-content :fullscreen="true" color="tertianary">
     <toolbar-layout-arrow> 
         <ion-text id="SobreNos" color="dark">
-          <h1>Sobre nós</h1>
+          <h1 id="sobreNosTitulo">Sobre nós</h1>
           <p id="textoSobreNos">&nbsp;&nbsp;&nbsp;&nbsp;A SobrouEmCasa surgiu durante a faculdade, 
           quando 5 estudantes se juntaram e decidiram 
           revolucionar o jeito de doar e ajudar o próximo.
@@ -56,6 +56,10 @@ export default defineComponent({
 </script>
 
 <style>
+
+#sobreNosTitulo {
+  font-family: 'Pacifico';
+}
 
 #ArrowBack{ 
   height: 25px;

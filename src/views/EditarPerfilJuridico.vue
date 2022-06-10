@@ -3,8 +3,8 @@
       <ion-content :fullscreen="true" >
         <toolbar-layout-arrow>
             <div class="center">
-              <h1>Editar Perfil</h1>
-              <h2>Foto de Perfil</h2>
+              <h1 class="editar-perfil">Editar Perfil</h1>
+              <p class="editar-foto-perfil">Foto de Perfil</p>
               <ion-img id="EditarInformacoes" src="../../assets/icon/Perfil.svg"></ion-img>
               <ion-button id="BottonSelecionarFotoPerfil" color="secondary" class="ion-margin">Selecionar outra foto de perfil</ion-button>
               
@@ -97,7 +97,7 @@
               </ion-item>
 
             <ion-button @click="this.$router.push('/HomePageJuridico')" fill="undefined">
-              <ion-img   id="EdicaoButton" src="../../assets/images/ConcluirEdicao.png"></ion-img>
+              <ion-img   id="EdicaoButton" src="../../assets/images/ConcluirEdicao.svg"></ion-img>
             </ion-button>
             <h2>Conta</h2>
             <ion-button class="ion-margin" color="danger">Alterar Senha</ion-button>
