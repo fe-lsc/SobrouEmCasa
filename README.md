@@ -87,25 +87,25 @@ Nessa tela o usuário poderá saber mais sobre os fundadores do aplicativo Sobro
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/SobreNos.png)
 
 ### 10 - Detalhes da Doação
-Nessa tela o usuário poderá visualizar todas as informações referentes ao(s) produto(os) a ser(em) doado(s).
+Nessa tela o usuário poderá visualizar todas as informações referentes ao(s) produto(os) a ser(em) doado(s). E também poderá visualizar a localização no mapa através do Google Maps (próxima tela).
 
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/DetalheDoacao-Slide1.png)
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/DetalheDoacao-Slide2.png)
 
-### 11 - Editar Doação
+### 11 - Mapa (Doação)
+Nessa tela o usuário poderá visualizar no mapa onde reside o doador.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/TelaMapa.png)
+
+### 12 - Editar Doação
 Nessa tela o usuário poderá editar ou excluir todas as informações referente ao produto que será doado.
 
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarDoacoes(SuasDoacoes)-Produto.png)
 
-### 12 - Suas Doações
+### 13 - Suas Doações
 Nessa tela o usuário poderá visualizar todos os produtos cadastrados para a doação.
 
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarDoacoes(SuasDoacoes).png)
-
-### 13 - Sobre Nós
-Nessa tela o usuário poderá saber mais sobre os fundadores do aplicativo SobrouEmCasa.
-
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/SobreNos.png)
 
 ### 14 - Editar Perfil Pessoa Física
 Nessa tela o usuário poderá editar ou apagar todas as suas informações de conta.
@@ -119,19 +119,19 @@ Nessa tela o usuário poderá editar ou apagar todas as suas informações de co
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarPerfilJuridico-Parte1.png)
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarPerfilJuridico-Parte2.png)
 
-### 16 - Procurar Doação
+### 16 - Alterar Senha
+Nessa tela o usuário poderá alterar a sua senha atual por uma nova.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/TelaMapa.png)
+
+### 17 - Procurar Doação
 Nessa tela o usuário poderá visualizar todas as doações feitas por outros usuários (pessoa física), e também será possível filtrar as informações por categoria e por distância.
 
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/ProcurarDoacao.png)
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/ProcurarDoacao-FiltrarPorCategoria.png)
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/ProcurarDoacao-FiltrarPorDistancia.png)
 
-### 17 - Registrar Doação
+### 18 - Registrar Doação
 Nessa tela o usuário poderá cadastrar o produto que será doado, colocando todas as suas informações.
 
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/RegistrarDoacao.png)
-
-### 18 - Mapa (Doação)
-Nessa tela o usuário poderá visualizar no mapa onde reside o doador.
-
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/TelaMapa.png)
