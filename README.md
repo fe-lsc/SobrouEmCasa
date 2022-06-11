@@ -46,7 +46,7 @@ https://github.com/M4teusPrado/SobrouEmCasa.API.git
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Cadastro.png)
 
 ### 3 - Cadastro Pessoa Física - Parte 1
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF - Parte 1.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF-Parte1.png)
 
 ### 3.1 - Cadastro Pessoa Física - Parte 2
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF - Parte 2.png)
