@@ -122,7 +122,7 @@ Nessa tela o usuário poderá editar ou apagar todas as suas informações de co
 ### 16 - Alterar Senha
 Nessa tela o usuário poderá alterar a sua senha atual por uma nova.
 
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/TelaMapa.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/AlterarSenha.png)
 
 ### 17 - Procurar Doação
 Nessa tela o usuário poderá visualizar todas as doações feitas por outros usuários (pessoa física), e também será possível filtrar as informações por categoria e por distância.
