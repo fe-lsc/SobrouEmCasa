@@ -23,7 +23,7 @@
             <span class="title-produto">Endereço: </span>
             <p>Alameda das Verbenas, 343</p>
           </div>          
-          <ion-img id="VerNoMapaButton" src="../../assets/images/VerNoMapa.svg"></ion-img>
+          <ion-img  @click="this.$router.push('/TelaMapa')" id="VerNoMapaButton" src="../../assets/images/VerNoMapa.svg"></ion-img>
 
           <div>
             .

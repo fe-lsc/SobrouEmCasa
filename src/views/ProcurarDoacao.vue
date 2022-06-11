@@ -45,7 +45,7 @@
               <ion-row>
                 
                 <ion-col>
-                  <ion-card  class="cardsAnuncios">
+                  <ion-card @click="this.$router.push('/DetalheDoacao')"  class="cardsAnuncios">
                     <ion-card-content>
                       <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/68/681215383550502.jpg" />
                     </ion-card-content>
@@ -57,7 +57,7 @@
                 </ion-col>
 
                 <ion-col>
-                  <ion-card class="cardsAnuncios">
+                  <ion-card @click="this.$router.push('/DetalheDoacao')" class="cardsAnuncios">
                     <ion-card-content>
                       <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/16/167246760824578.jpg" />
                     </ion-card-content>
@@ -72,7 +72,7 @@
               <ion-row>
 
                 <ion-col>
-                  <ion-card class="cardsAnuncios">
+                  <ion-card @click="this.$router.push('/DetalheDoacao')" class="cardsAnuncios">
                     <ion-card-content>
                       <img class="ImagemCardsAnuncios" src="https://frankfurt.apollo.olxcdn.com/v1/files/py8lqbzx8ku41-RO/image;s=644x461" />
                     </ion-card-content>
@@ -84,7 +84,7 @@
                 </ion-col>
 
                 <ion-col>
-                    <ion-card class="cardsAnuncios">
+                    <ion-card @click="this.$router.push('/DetalheDoacao')" class="cardsAnuncios">
                         <ion-card-content>
                                 <img class="ImagemCardsAnuncios" src="https://img.olx.com.br/images/87/878206275860987.jpg" />
                             </ion-card-content>

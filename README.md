@@ -40,34 +40,98 @@ https://github.com/M4teusPrado/SobrouEmCasa.API.git
 
 ## TELAS DO APLICATIVO
 ### 1 - Login 
+Nessa tela o usuário poderá colocar as suas credenciais para fazer login na aplicação. Caso o mesmo não haja cadastro, é só clicar em: "Cadastre-se aqui!"
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Login.png)
 
 ### 2 - Tela Cadastro
+Nessa tela o usuário poderá escolher o tipo de cadastro que irá fazer, o de pessoa física ou jurídica.
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Cadastro.png)
 
-### 3 - Cadastro Pessoa Física - Parte 1
+### 3 - Cadastro Pessoa Física
+Nessa tela o usuário de pessoa física irá preencher todos os campos e em seguida clicar no botão "CRIAR".
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF-Parte1.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF-Parte2.png)
 
-### 3.1 - Cadastro Pessoa Física - Parte 2
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF - Parte 2.png)
+### 4 - Cadastro Pessoa Jurídica
+Nessa tela o usuário de pessoa jurídica irá preencher todos os campos e em seguida clicar no botão "CRIAR".
 
-### 4 - Cadastro Pessoa Juridica - Parte 1
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPJ - Parte 1.png)
-
-### 4.1 - Cadastro Pessoa Juridica - Parte 2
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPJ - Parte 2.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPJ-Parte1.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPJ-Parte2.png)
 
 ### 5 - Home Page Doador
+Nessa tela o doador poderá visualizar as suas informações, editá-las e realizar uma nova doação.
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/HomePageDoador.png)
 
-### 6 - Home Page Juridico
+### 6 - Home Page Jurídico
+Nessa tela o doador poderá visualizar as suas informações, editá-las e procurar por doações disponíveis.
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/HomePageJuridico.png)
 
 ### 7 - Tela Registrar Doação
+Nessa tela, o doador irá colocar todas as informações referente ao produto a ser doado.
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/RegistrarDoacao.png)
 
 ### 8 - Menu Lateral
+No menu, localizado no canto superior esquerdo, possibilitará que usuário possa ter alguns atalhos na sua navegação.
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Menu.png)
 
 ### 9 - Sobre Nós
+Nessa tela o usuário poderá saber mais sobre os fundadores do aplicativo SobrouEmCasa.
+
 ![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/SobreNos.png)
+
+### 10 - Detalhes da Doação
+Nessa tela o usuário poderá visualizar todas as informações referentes ao(s) produto(os) a ser(em) doado(s).
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/DetalheDoacao-Slide1.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/DetalheDoacao-Slide2.png)
+
+### 11 - Editar Doação
+Nessa tela o usuário poderá editar ou excluir todas as informações referente ao produto que será doado.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarDoacoes(SuasDoacoes)-Produto.png)
+
+### 12 - Suas Doações
+Nessa tela o usuário poderá visualizar todos os produtos cadastrados para a doação.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarDoacoes(SuasDoacoes).png)
+
+### 13 - Sobre Nós
+Nessa tela o usuário poderá saber mais sobre os fundadores do aplicativo SobrouEmCasa.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/SobreNos.png)
+
+### 14 - Editar Perfil Pessoa Física
+Nessa tela o usuário poderá editar ou apagar todas as suas informações de conta.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarPerfilFisico-Parte1.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarPerfilFisico-Parte2.png)
+
+### 15 - Editar Perfil Pessoa Jurídica
+Nessa tela o usuário poderá editar ou apagar todas as suas informações de conta.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarPerfilJuridico-Parte1.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/EditarPerfilJuridico-Parte2.png)
+
+### 16 - Procurar Doação
+Nessa tela o usuário poderá visualizar todas as doações feitas por outros usuários (pessoa física), e também será possível filtrar as informações por categoria e por distância.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/ProcurarDoacao.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/ProcurarDoacao-FiltrarPorCategoria.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/ProcurarDoacao-FiltrarPorDistancia.png)
+
+### 17 - Registrar Doação
+Nessa tela o usuário poderá cadastrar o produto que será doado, colocando todas as suas informações.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/RegistrarDoacao.png)
+
+### 18 - Mapa (Doação)
+Nessa tela o usuário poderá visualizar no mapa onde reside o doador.
+
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/TelaMapa.png)
