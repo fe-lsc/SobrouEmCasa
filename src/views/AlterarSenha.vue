@@ -3,7 +3,7 @@
       <ion-content :fullscreen="true" >
         <toolbar-layout>
             <div class="center">
-              <h1>Alterar Senha</h1>
+              <h1 id="alterarSenha">Alterar Senha</h1>
               <ion-item color="light"  class="inputCadastro">
                   <ion-label position="floating">Senha Antiga:</ion-label>
                   <ion-input type="password" required v-model="SenhaAntiga" />
@@ -51,5 +51,9 @@ export default defineComponent({
 
 .center {
   text-align: center;
+}
+
+#alterarSenha {
+  font-family: 'Pacifico';
 }
 </style>
