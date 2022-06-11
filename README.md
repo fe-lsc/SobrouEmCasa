@@ -38,30 +38,36 @@ https://github.com/M4teusPrado/SobrouEmCasa.API.git
 ######    5.3 - Digite o comando "Ionic serve"
 ######    5.4 - Irá abrir o app.
 
-## TELAS EM ANDAMENTO (Todas ainda passarão por um refinamento de design e funcionalidades)
+## TELAS DO APLICATIVO
 ### 1 - Login 
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/Login.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Login.png)
 
 ### 2 - Tela Cadastro
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastro.png)
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Cadastro.png)
 
-### 3 - Cadastro Pessoa Física
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastroPf_JUNTAS.png)
+### 3 - Cadastro Pessoa Física - Parte 1
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF - Parte 1.png)
 
-### 4 - Cadastro Pessoa Juridica 
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/TelaCadastroPj_JUNTAS.png)
+### 3.1 - Cadastro Pessoa Física - Parte 2
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPF - Parte 2.png)
 
-### 5 - Home Page Doador (Em fase inicial)
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/HomePagePessoaFisica.png)
+### 4 - Cadastro Pessoa Juridica - Parte 1
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPJ - Parte 1.png)
 
-### 6 - Home Page Juridico (Em fase inicial)
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/HomePagePessoaJuridico.png)
+### 4.1 - Cadastro Pessoa Juridica - Parte 2
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/CadastroPJ - Parte 2.png)
 
-### 7 - Tela Registrar Doação (Em fase inicial)
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/RegistrarDoacao.png)
+### 5 - Home Page Doador
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/HomePageDoador.png)
 
-### 8 - Menu Lateral (Em fase inicial)
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/Menu.png)
+### 6 - Home Page Juridico
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/HomePageJuridico.png)
 
-### 9 - Sobre Nós (Em fase inicial)
-![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasEmDesenvolvimento/SobreNos_JUNTO.png)
+### 7 - Tela Registrar Doação
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/RegistrarDoacao.png)
+
+### 8 - Menu Lateral
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/Menu.png)
+
+### 9 - Sobre Nós
+![alt text](https://github.com/fe-lsc/SobrouEmCasa/blob/main/public/assets/TelasDoApp/SobreNos.png)
