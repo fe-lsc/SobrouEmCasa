@@ -35,7 +35,7 @@ export default defineComponent({
   }, 
   data(){
     return{
-      LinkInsta: "http://www.instagram.com",
+      LinkInsta: "https://www.instagram.com/sobrouemcasa/",
       LinkTwitter: "http://www.twitter.com",
       LinkFacebook: "http://www.facebook.com"
     }

@@ -17,7 +17,7 @@
               <ion-input type="password" required v-model="Senha" />
           </ion-item>
         </ion-list>
-        <ion-button  fill="solid" size="small"  type="submit" expand="full" @click="login">Entrar</ion-button> 
+        <ion-button  fill="solid" size="small"  type="submit" expand="full"  @click="this.$router.push('/HomePageDoador')">Entrar</ion-button> 
       </form>
 
     
